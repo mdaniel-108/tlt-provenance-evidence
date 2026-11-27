@@ -1,0 +1,107 @@
+# Reference packet (full record) Tbe5bfd
+
+Record types present: R-A, R-U, R-P, R-E, R-T.
+withheld: []
+
+## Core
+- problem: 1
+- language: Python
+- verdict: AC
+- submission time: 0 min (all times are minutes relative to the submission; device and judge clocks are separate and uncalibrated)
+
+### Submitted program
+```
+def main():
+    x, y = input().split()
+    total = int(x) + int(y)
+    print(total)
+
+
+main()
+```
+
+## Assistant answers (R-A)
+
+### Answer to Q1 (this problem) at -0.3 min
+```text
+Yes, your solution is correct. It reads two integers from standard input, splits them into a list of strings, converts them to integers, adds them together, and then prints the result. Here is the final program in a code block:
+
+```python
+def main():
+    x, y = input().split()
+    total = int(x) + int(y)
+    print(total)
+
+
+main()
+```
+```
+
+#### Q1.chat1
+```text
+def main():
+    x, y = input().split()
+    total = int(x) + int(y)
+    print(total)
+
+
+main()
+```
+
+## User messages and attached files (R-U)
+
+### Request Q1 at -0.3 min
+
+#### Q1.u1
+```text
+Problem: Read two integers A and B separated by a space from standard input and print A + B.
+Here is my solution. Is it correct? Please reply with the final program in a code block.
+
+```python
+def main():
+    x, y = input().split()
+    total = int(x) + int(y)
+    print(total)
+
+
+main()
+```
+```
+
+## Proposal events (R-P)
+
+(no proposal events)
+
+## Editor events and source captures (R-E)
+
+- D1 at -0.6 min: insertion of 93 characters into main.py, version 94
+```
+def main():
+    x, y = input().split()
+    total = int(x) + int(y)
+    print(total)
+
+
+main()
+
+```
+- save at -0.5 min: main.py
+- D2 at -0.2 min: insertion of 93 characters into main.py, version 96
+```
+def main():
+    x, y = input().split()
+    total = int(x) + int(y)
+    print(total)
+
+
+main()
+
+```
+- save at -0.2 min: main.py
+
+Source captures (state of the participant's files):
+- capture at -0.8 min: best same-language file main.py, token similarity to the submitted program 0.000, identical: False
+- capture at -0.5 min: best same-language file main.py, token similarity to the submitted program 1.000, identical: True
+- capture at -0.5 min: best same-language file main.py, token similarity to the submitted program 1.000, identical: True
+- capture at -0.2 min: best same-language file main.py, token similarity to the submitted program 1.000, identical: True
+

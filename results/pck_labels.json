@@ -1,0 +1,34 @@
+{
+  "submissions": 1047,
+  "participants": 21,
+  "near_verbatim": {
+    "n": 895,
+    "tier_C": 895,
+    "tier_B": 780,
+    "tier_A": 553,
+    "b_chain": 109,
+    "unknown": 6
+  },
+  "edited": {
+    "n": 57,
+    "tier_C": 57,
+    "tier_B": 39,
+    "tier_A": 22,
+    "b_chain": 16,
+    "unknown": 2
+  },
+  "none": {
+    "n": 95,
+    "tier_C": 0,
+    "tier_B": 0,
+    "tier_A": 0,
+    "b_chain": 0,
+    "unknown": 95
+  },
+  "by_language_tier_B": {
+    "Java": 241,
+    "C++": 489,
+    "C": 89
+  },
+  "note": "Tier B primary. Unknown is never treated as human."
+}

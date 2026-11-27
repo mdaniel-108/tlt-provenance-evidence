@@ -1,0 +1,59 @@
+{
+  "submissions": 1047,
+  "thresholds": {
+    "derived": 0.8,
+    "verbatim": 0.99
+  },
+  "full_record": {
+    "derived": 952,
+    "verbatim": 895
+  },
+  "chat_only": {
+    "derived": 839,
+    "verbatim": 811
+  },
+  "lost_without_proposals": {
+    "derived": 113,
+    "verbatim": 84
+  },
+  "label_groups": {
+    "verbatim": {
+      "submissions": 895,
+      "participants": 21,
+      "problems": 13,
+      "trajectories": 219
+    },
+    "edited_0_80_to_0_99": {
+      "submissions": 57,
+      "participants": 13,
+      "problems": 11,
+      "trajectories": 31
+    },
+    "no_recorded_match": {
+      "submissions": 95,
+      "participants": 14,
+      "problems": 12,
+      "trajectories": 49
+    }
+  },
+  "echo_adjusted_from_existing_outputs": {
+    "verbatim_and_mostly_new_same_request_rule": 780,
+    "verbatim_and_mostly_new_broadest_rule": 553,
+    "verbatim_mostly_echo": 115,
+    "source": "X1 matching"
+  },
+  "telemetry_event_counts": {
+    "session_start": 25,
+    "source_capture": 3483,
+    "chat_message": 3613,
+    "edit_proposal": 589,
+    "active_editor_change": 1498,
+    "edit_delta": 1337,
+    "file_save": 457,
+    "editor_snapshot": 502,
+    "submission_marker": 46,
+    "thread_created": 273,
+    "collection_suppressed": 104
+  },
+  "note": "No recorded match is unknown provenance, not human-written. 3 of 21 participants have server records only (empty device archives)."
+}

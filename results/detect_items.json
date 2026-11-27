@@ -1,0 +1,29 @@
+{
+  "by_set_label": {
+    "pck|-1": 1047,
+    "pck_ai|1": 1199,
+    "seen_test|0": 240,
+    "seen_test|1": 240,
+    "test|0": 360,
+    "test|1": 240,
+    "test_reformat|0": 359,
+    "test_reformat|1": 240,
+    "test_rename|0": 360,
+    "test_rename|1": 240,
+    "train|0": 1200,
+    "train|1": 720,
+    "val|0": 360,
+    "val|1": 240
+  },
+  "transformations_verified": {
+    "reformat|failed": 1,
+    "reformat|ok": 599,
+    "rename|ok": 600
+  },
+  "pck_ai_blocks_by_language": {
+    "C++": 731,
+    "Java": 306,
+    "C": 162
+  },
+  "pck_ai_participants": 21
+}

@@ -1,0 +1,3152 @@
+{
+ "note": "Main study: reference adjudicators 1 and 2; configuration reviewers A and B; consensus coder. Stratified sample, so rates are not population estimates.",
+ "cases": 177,
+ "strata": {
+  "ED": 47,
+  "D": 25,
+  "AN": 35,
+  "NM": 20,
+  "PR": 30,
+  "AE": 20
+ },
+ "agreement_before_consensus": {
+  "reference_C1": {
+   "n": 177,
+   "raw": 0.994,
+   "ac1": 0.993,
+   "strength_raw": 0.983
+  },
+  "reference_C2": {
+   "n": 177,
+   "raw": 0.96,
+   "ac1": 0.956,
+   "strength_raw": 0.949
+  },
+  "reference_C3": {
+   "n": 177,
+   "raw": 0.989,
+   "ac1": 0.984,
+   "strength_raw": 0.955
+  },
+  "reference_C4": {
+   "n": 177,
+   "raw": 0.972,
+   "ac1": 0.944,
+   "strength_raw": 0.955
+  },
+  "config_C1": {
+   "n": 531,
+   "raw": 0.979,
+   "ac1": 0.975,
+   "strength_raw": 0.955
+  },
+  "config_C2": {
+   "n": 531,
+   "raw": 0.93,
+   "ac1": 0.912,
+   "strength_raw": 0.902
+  },
+  "config_C3": {
+   "n": 531,
+   "raw": 0.985,
+   "ac1": 0.98,
+   "strength_raw": 0.955
+  },
+  "config_C4": {
+   "n": 531,
+   "raw": 0.953,
+   "ac1": 0.941,
+   "strength_raw": 0.921
+  }
+ },
+ "reference": {
+  "C1": {
+   "supported": 161,
+   "unresolved": 16
+  },
+  "C2": {
+   "supported": 157,
+   "unresolved": 15,
+   "contradicted": 5
+  },
+  "C3": {
+   "supported": 86,
+   "unresolved": 91
+  },
+  "C4": {
+   "supported": 81,
+   "unresolved": 96
+  }
+ },
+ "reference_strength": {
+  "C1": {
+   "direct": 59,
+   "corroborated": 102
+  },
+  "C2": {
+   "direct": 57,
+   "corroborated": 105
+  },
+  "C3": {
+   "direct": 56,
+   "corroborated": 30
+  },
+  "C4": {
+   "direct": 55,
+   "corroborated": 26
+  }
+ },
+ "reference_C3_mechanism": {
+  "proposal_applied": 56,
+  "not_identifiable": 91,
+  "editor_insertion": 30
+ },
+ "reference_C1_by_stratum": {
+  "ED": {
+   "supported": 47
+  },
+  "D": {
+   "supported": 25
+  },
+  "AN": {
+   "supported": 35
+  },
+  "NM": {
+   "supported": 5,
+   "unresolved": 15
+  },
+  "PR": {
+   "supported": 29,
+   "unresolved": 1
+  },
+  "AE": {
+   "supported": 20
+  }
+ },
+ "configurations": {
+  "E0": {
+   "C1": {
+    "n": 47,
+    "table": {
+     "supported->unresolved": 42,
+     "unresolved->unresolved": 5
+    },
+    "strength_of_resolved_decisions": {},
+    "reference_resolved": 42,
+    "agree_with_reference": 0,
+    "unresolved_here_resolved_by_full": 42,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 5
+   },
+   "C2": {
+    "n": 47,
+    "table": {
+     "supported->unresolved": 42,
+     "contradicted->unresolved": 1,
+     "unresolved->unresolved": 4
+    },
+    "strength_of_resolved_decisions": {},
+    "reference_resolved": 43,
+    "agree_with_reference": 0,
+    "unresolved_here_resolved_by_full": 43,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 4
+   },
+   "C3": {
+    "n": 47,
+    "table": {
+     "unresolved->unresolved": 26,
+     "supported->unresolved": 21
+    },
+    "strength_of_resolved_decisions": {},
+    "reference_resolved": 21,
+    "agree_with_reference": 0,
+    "unresolved_here_resolved_by_full": 21,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 26
+   },
+   "C4": {
+    "n": 47,
+    "table": {
+     "unresolved->unresolved": 26,
+     "supported->unresolved": 21
+    },
+    "strength_of_resolved_decisions": {},
+    "reference_resolved": 21,
+    "agree_with_reference": 0,
+    "unresolved_here_resolved_by_full": 21,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 26
+   },
+   "cost": {
+    "median_packet_kb": 3.2,
+    "records_retained": [],
+    "privacy_indicators": [
+     "submitted source code (core)"
+    ]
+   },
+   "self_reported_effort": {
+    "low": 94
+   }
+  },
+  "E1": {
+   "C1": {
+    "n": 51,
+    "table": {
+     "supported->supported": 45,
+     "supported->unresolved": 2,
+     "unresolved->unresolved": 3,
+     "unresolved->contradicted": 1
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 46
+    },
+    "reference_resolved": 47,
+    "agree_with_reference": 45,
+    "unresolved_here_resolved_by_full": 2,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 4
+   },
+   "C2": {
+    "n": 51,
+    "table": {
+     "unresolved->unresolved": 4,
+     "supported->supported": 37,
+     "supported->unresolved": 8,
+     "contradicted->unresolved": 1,
+     "contradicted->contradicted": 1
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 38
+    },
+    "reference_resolved": 47,
+    "agree_with_reference": 38,
+    "unresolved_here_resolved_by_full": 9,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 4
+   },
+   "C3": {
+    "n": 51,
+    "table": {
+     "unresolved->unresolved": 24,
+     "supported->unresolved": 27
+    },
+    "strength_of_resolved_decisions": {},
+    "reference_resolved": 27,
+    "agree_with_reference": 0,
+    "unresolved_here_resolved_by_full": 27,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 24
+   },
+   "C4": {
+    "n": 51,
+    "table": {
+     "unresolved->unresolved": 25,
+     "supported->unresolved": 26
+    },
+    "strength_of_resolved_decisions": {},
+    "reference_resolved": 26,
+    "agree_with_reference": 0,
+    "unresolved_here_resolved_by_full": 26,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 25
+   },
+   "cost": {
+    "median_packet_kb": 22.2,
+    "records_retained": [
+     "R-A"
+    ],
+    "privacy_indicators": [
+     "assistant output",
+     "submitted source code (core)"
+    ]
+   },
+   "self_reported_effort": {
+    "medium": 39,
+    "low": 46,
+    "high": 17
+   }
+  },
+  "E1+E+T": {
+   "C1": {
+    "n": 54,
+    "table": {
+     "supported->supported": 48,
+     "unresolved->unresolved": 5,
+     "unresolved->contradicted": 1
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 49
+    },
+    "reference_resolved": 48,
+    "agree_with_reference": 48,
+    "unresolved_here_resolved_by_full": 0,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 6
+   },
+   "C2": {
+    "n": 54,
+    "table": {
+     "supported->supported": 45,
+     "unresolved->unresolved": 5,
+     "contradicted->contradicted": 3,
+     "supported->unresolved": 1
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 48
+    },
+    "reference_resolved": 49,
+    "agree_with_reference": 48,
+    "unresolved_here_resolved_by_full": 1,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 5
+   },
+   "C3": {
+    "n": 54,
+    "table": {
+     "supported->supported": 21,
+     "unresolved->unresolved": 33
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 21
+    },
+    "reference_resolved": 21,
+    "agree_with_reference": 21,
+    "unresolved_here_resolved_by_full": 0,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 33
+   },
+   "C4": {
+    "n": 54,
+    "table": {
+     "supported->supported": 21,
+     "unresolved->unresolved": 32,
+     "unresolved->contradicted": 1
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 22
+    },
+    "reference_resolved": 21,
+    "agree_with_reference": 21,
+    "unresolved_here_resolved_by_full": 0,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 33
+   },
+   "cost": {
+    "median_packet_kb": 27.6,
+    "records_retained": [
+     "R-A",
+     "R-E",
+     "R-T"
+    ],
+    "privacy_indicators": [
+     "assistant output",
+     "keystroke-level edits, saves and source captures",
+     "fine-grained timestamps",
+     "submitted source code (core)"
+    ]
+   },
+   "self_reported_effort": {
+    "medium": 54,
+    "low": 31,
+    "high": 23
+   }
+  },
+  "E1u": {
+   "C1": {
+    "n": 47,
+    "table": {
+     "supported->supported": 42,
+     "unresolved->contradicted": 2,
+     "unresolved->unresolved": 2,
+     "unresolved->supported": 1
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 45
+    },
+    "reference_resolved": 42,
+    "agree_with_reference": 42,
+    "unresolved_here_resolved_by_full": 0,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 5
+   },
+   "C2": {
+    "n": 47,
+    "table": {
+     "supported->supported": 38,
+     "unresolved->unresolved": 4,
+     "contradicted->contradicted": 2,
+     "supported->unresolved": 2,
+     "contradicted->unresolved": 1
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 40
+    },
+    "reference_resolved": 43,
+    "agree_with_reference": 40,
+    "unresolved_here_resolved_by_full": 3,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 4
+   },
+   "C3": {
+    "n": 47,
+    "table": {
+     "unresolved->unresolved": 25,
+     "supported->unresolved": 22
+    },
+    "strength_of_resolved_decisions": {},
+    "reference_resolved": 22,
+    "agree_with_reference": 0,
+    "unresolved_here_resolved_by_full": 22,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 25
+   },
+   "C4": {
+    "n": 47,
+    "table": {
+     "unresolved->unresolved": 28,
+     "supported->unresolved": 19
+    },
+    "strength_of_resolved_decisions": {},
+    "reference_resolved": 19,
+    "agree_with_reference": 0,
+    "unresolved_here_resolved_by_full": 19,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 28
+   },
+   "cost": {
+    "median_packet_kb": 34.3,
+    "records_retained": [
+     "R-A",
+     "R-U"
+    ],
+    "privacy_indicators": [
+     "assistant output",
+     "free-text prompts and attached source files",
+     "submitted source code (core)"
+    ]
+   },
+   "self_reported_effort": {
+    "low": 36,
+    "medium": 40,
+    "high": 18
+   }
+  },
+  "E1u+P": {
+   "C1": {
+    "n": 59,
+    "table": {
+     "supported->supported": 55,
+     "unresolved->unresolved": 4
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 46,
+     "direct": 9
+    },
+    "reference_resolved": 55,
+    "agree_with_reference": 55,
+    "unresolved_here_resolved_by_full": 0,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 4
+   },
+   "C2": {
+    "n": 59,
+    "table": {
+     "supported->supported": 53,
+     "supported->unresolved": 2,
+     "unresolved->unresolved": 4
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 44,
+     "direct": 9
+    },
+    "reference_resolved": 55,
+    "agree_with_reference": 53,
+    "unresolved_here_resolved_by_full": 2,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 4
+   },
+   "C3": {
+    "n": 59,
+    "table": {
+     "supported->supported": 20,
+     "unresolved->unresolved": 28,
+     "supported->unresolved": 11
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 11,
+     "direct": 9
+    },
+    "reference_resolved": 31,
+    "agree_with_reference": 20,
+    "unresolved_here_resolved_by_full": 11,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 28
+   },
+   "C4": {
+    "n": 59,
+    "table": {
+     "supported->supported": 14,
+     "unresolved->unresolved": 31,
+     "supported->unresolved": 14
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 14
+    },
+    "reference_resolved": 28,
+    "agree_with_reference": 14,
+    "unresolved_here_resolved_by_full": 14,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 31
+   },
+   "cost": {
+    "median_packet_kb": 38.3,
+    "records_retained": [
+     "R-A",
+     "R-U",
+     "R-P"
+    ],
+    "privacy_indicators": [
+     "assistant output",
+     "free-text prompts and attached source files",
+     "proposal events",
+     "submitted source code (core)"
+    ]
+   },
+   "self_reported_effort": {
+    "high": 23,
+    "medium": 48,
+    "low": 47
+   }
+  },
+  "Full-A": {
+   "C1": {
+    "n": 54,
+    "table": {
+     "supported->unresolved": 27,
+     "supported->supported": 24,
+     "unresolved->unresolved": 3
+    },
+    "strength_of_resolved_decisions": {
+     "direct": 22,
+     "corroborated": 2
+    },
+    "reference_resolved": 51,
+    "agree_with_reference": 24,
+    "unresolved_here_resolved_by_full": 27,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 3
+   },
+   "C2": {
+    "n": 54,
+    "table": {
+     "supported->unresolved": 28,
+     "supported->supported": 22,
+     "unresolved->unresolved": 3,
+     "contradicted->unresolved": 1
+    },
+    "strength_of_resolved_decisions": {
+     "direct": 21,
+     "corroborated": 1
+    },
+    "reference_resolved": 51,
+    "agree_with_reference": 22,
+    "unresolved_here_resolved_by_full": 29,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 3
+   },
+   "C3": {
+    "n": 54,
+    "table": {
+     "unresolved->unresolved": 22,
+     "supported->supported": 24,
+     "supported->unresolved": 8
+    },
+    "strength_of_resolved_decisions": {
+     "direct": 22,
+     "corroborated": 2
+    },
+    "reference_resolved": 32,
+    "agree_with_reference": 24,
+    "unresolved_here_resolved_by_full": 8,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 22
+   },
+   "C4": {
+    "n": 54,
+    "table": {
+     "unresolved->unresolved": 24,
+     "supported->supported": 21,
+     "supported->unresolved": 9
+    },
+    "strength_of_resolved_decisions": {
+     "direct": 21
+    },
+    "reference_resolved": 30,
+    "agree_with_reference": 21,
+    "unresolved_here_resolved_by_full": 9,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 24
+   },
+   "cost": {
+    "median_packet_kb": 23.4,
+    "records_retained": [
+     "R-U",
+     "R-P",
+     "R-E",
+     "R-T"
+    ],
+    "privacy_indicators": [
+     "free-text prompts and attached source files",
+     "proposal events",
+     "keystroke-level edits, saves and source captures",
+     "fine-grained timestamps",
+     "submitted source code (core)"
+    ]
+   },
+   "self_reported_effort": {
+    "low": 33,
+    "medium": 48,
+    "high": 27
+   }
+  },
+  "Full-E": {
+   "C1": {
+    "n": 68,
+    "table": {
+     "supported->supported": 59,
+     "unresolved->unresolved": 9
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 41,
+     "direct": 18
+    },
+    "reference_resolved": 59,
+    "agree_with_reference": 59,
+    "unresolved_here_resolved_by_full": 0,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 9
+   },
+   "C2": {
+    "n": 68,
+    "table": {
+     "supported->supported": 58,
+     "unresolved->unresolved": 8,
+     "contradicted->contradicted": 2
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 42,
+     "direct": 18
+    },
+    "reference_resolved": 60,
+    "agree_with_reference": 60,
+    "unresolved_here_resolved_by_full": 0,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 8
+   },
+   "C3": {
+    "n": 68,
+    "table": {
+     "unresolved->unresolved": 39,
+     "supported->supported": 21,
+     "supported->unresolved": 7,
+     "unresolved->supported": 1
+    },
+    "strength_of_resolved_decisions": {
+     "direct": 19,
+     "corroborated": 3
+    },
+    "reference_resolved": 28,
+    "agree_with_reference": 21,
+    "unresolved_here_resolved_by_full": 7,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 40
+   },
+   "C4": {
+    "n": 68,
+    "table": {
+     "unresolved->unresolved": 41,
+     "supported->supported": 21,
+     "supported->unresolved": 6
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 20,
+     "direct": 1
+    },
+    "reference_resolved": 27,
+    "agree_with_reference": 21,
+    "unresolved_here_resolved_by_full": 6,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 41
+   },
+   "cost": {
+    "median_packet_kb": 36.1,
+    "records_retained": [
+     "R-A",
+     "R-U",
+     "R-P",
+     "R-T"
+    ],
+    "privacy_indicators": [
+     "assistant output",
+     "free-text prompts and attached source files",
+     "proposal events",
+     "fine-grained timestamps",
+     "submitted source code (core)"
+    ]
+   },
+   "self_reported_effort": {
+    "low": 43,
+    "medium": 60,
+    "high": 33
+   }
+  },
+  "Full-P": {
+   "C1": {
+    "n": 54,
+    "table": {
+     "supported->supported": 50,
+     "unresolved->unresolved": 4
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 50
+    },
+    "reference_resolved": 50,
+    "agree_with_reference": 50,
+    "unresolved_here_resolved_by_full": 0,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 4
+   },
+   "C2": {
+    "n": 54,
+    "table": {
+     "supported->supported": 46,
+     "unresolved->unresolved": 5,
+     "supported->unresolved": 2,
+     "contradicted->contradicted": 1
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 47
+    },
+    "reference_resolved": 49,
+    "agree_with_reference": 47,
+    "unresolved_here_resolved_by_full": 2,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 5
+   },
+   "C3": {
+    "n": 54,
+    "table": {
+     "unresolved->unresolved": 26,
+     "supported->supported": 28
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 28
+    },
+    "reference_resolved": 28,
+    "agree_with_reference": 28,
+    "unresolved_here_resolved_by_full": 0,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 26
+   },
+   "C4": {
+    "n": 54,
+    "table": {
+     "unresolved->unresolved": 29,
+     "supported->supported": 24,
+     "supported->unresolved": 1
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 24
+    },
+    "reference_resolved": 25,
+    "agree_with_reference": 24,
+    "unresolved_here_resolved_by_full": 1,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 29
+   },
+   "cost": {
+    "median_packet_kb": 48.9,
+    "records_retained": [
+     "R-A",
+     "R-U",
+     "R-E",
+     "R-T"
+    ],
+    "privacy_indicators": [
+     "assistant output",
+     "free-text prompts and attached source files",
+     "keystroke-level edits, saves and source captures",
+     "fine-grained timestamps",
+     "submitted source code (core)"
+    ]
+   },
+   "self_reported_effort": {
+    "low": 31,
+    "medium": 49,
+    "high": 28
+   }
+  },
+  "Full-T": {
+   "C1": {
+    "n": 59,
+    "table": {
+     "supported->supported": 55,
+     "unresolved->unresolved": 4
+    },
+    "strength_of_resolved_decisions": {
+     "direct": 24,
+     "corroborated": 31
+    },
+    "reference_resolved": 55,
+    "agree_with_reference": 55,
+    "unresolved_here_resolved_by_full": 0,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 4
+   },
+   "C2": {
+    "n": 59,
+    "table": {
+     "supported->supported": 54,
+     "supported->unresolved": 1,
+     "unresolved->unresolved": 2,
+     "contradicted->unresolved": 1,
+     "contradicted->contradicted": 1
+    },
+    "strength_of_resolved_decisions": {
+     "direct": 23,
+     "corroborated": 32
+    },
+    "reference_resolved": 57,
+    "agree_with_reference": 55,
+    "unresolved_here_resolved_by_full": 2,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 2
+   },
+   "C3": {
+    "n": 59,
+    "table": {
+     "supported->supported": 30,
+     "unresolved->unresolved": 29
+    },
+    "strength_of_resolved_decisions": {
+     "direct": 23,
+     "corroborated": 7
+    },
+    "reference_resolved": 30,
+    "agree_with_reference": 30,
+    "unresolved_here_resolved_by_full": 0,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 29
+   },
+   "C4": {
+    "n": 59,
+    "table": {
+     "supported->supported": 28,
+     "unresolved->unresolved": 31
+    },
+    "strength_of_resolved_decisions": {
+     "direct": 20,
+     "corroborated": 8
+    },
+    "reference_resolved": 28,
+    "agree_with_reference": 28,
+    "unresolved_here_resolved_by_full": 0,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 31
+   },
+   "cost": {
+    "median_packet_kb": 48.8,
+    "records_retained": [
+     "R-A",
+     "R-U",
+     "R-P",
+     "R-E"
+    ],
+    "privacy_indicators": [
+     "assistant output",
+     "free-text prompts and attached source files",
+     "proposal events",
+     "keystroke-level edits, saves and source captures",
+     "submitted source code (core)"
+    ]
+   },
+   "self_reported_effort": {
+    "high": 32,
+    "medium": 56,
+    "low": 30
+   }
+  },
+  "Full-U": {
+   "C1": {
+    "n": 38,
+    "table": {
+     "supported->supported": 34,
+     "unresolved->unresolved": 4
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 24,
+     "direct": 10
+    },
+    "reference_resolved": 34,
+    "agree_with_reference": 34,
+    "unresolved_here_resolved_by_full": 0,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 4
+   },
+   "C2": {
+    "n": 38,
+    "table": {
+     "supported->supported": 31,
+     "supported->unresolved": 1,
+     "unresolved->unresolved": 6
+    },
+    "strength_of_resolved_decisions": {
+     "corroborated": 22,
+     "direct": 9
+    },
+    "reference_resolved": 32,
+    "agree_with_reference": 31,
+    "unresolved_here_resolved_by_full": 1,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 6
+   },
+   "C3": {
+    "n": 38,
+    "table": {
+     "unresolved->unresolved": 20,
+     "supported->supported": 18
+    },
+    "strength_of_resolved_decisions": {
+     "direct": 9,
+     "corroborated": 9
+    },
+    "reference_resolved": 18,
+    "agree_with_reference": 18,
+    "unresolved_here_resolved_by_full": 0,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 20
+   },
+   "C4": {
+    "n": 38,
+    "table": {
+     "unresolved->unresolved": 20,
+     "supported->supported": 18
+    },
+    "strength_of_resolved_decisions": {
+     "direct": 10,
+     "corroborated": 8
+    },
+    "reference_resolved": 18,
+    "agree_with_reference": 18,
+    "unresolved_here_resolved_by_full": 0,
+    "opposite_or_pending": 0,
+    "reference_unresolved_cases": 20
+   },
+   "cost": {
+    "median_packet_kb": 36.4,
+    "records_retained": [
+     "R-A",
+     "R-P",
+     "R-E",
+     "R-T"
+    ],
+    "privacy_indicators": [
+     "assistant output",
+     "proposal events",
+     "keystroke-level edits, saves and source captures",
+     "fine-grained timestamps",
+     "submitted source code (core)"
+    ]
+   },
+   "self_reported_effort": {
+    "medium": 41,
+    "low": 24,
+    "high": 11
+   }
+  }
+ },
+ "coverage_checks": {
+  "configurations": {
+   "E0": {
+    "C1": {
+     "cases": 47,
+     "resolved_here": 0,
+     "resolved_here_share": 0.0,
+     "reference_resolved": 42,
+     "agree": 0,
+     "opposite": 0,
+     "lost_to_unresolved": 42,
+     "reference_unresolved": 5,
+     "from_unresolved": {
+      "unresolved": 5
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C2": {
+     "cases": 47,
+     "resolved_here": 0,
+     "resolved_here_share": 0.0,
+     "reference_resolved": 43,
+     "agree": 0,
+     "opposite": 0,
+     "lost_to_unresolved": 43,
+     "reference_unresolved": 4,
+     "from_unresolved": {
+      "unresolved": 4
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C3": {
+     "cases": 47,
+     "resolved_here": 0,
+     "resolved_here_share": 0.0,
+     "reference_resolved": 21,
+     "agree": 0,
+     "opposite": 0,
+     "lost_to_unresolved": 21,
+     "reference_unresolved": 26,
+     "from_unresolved": {
+      "unresolved": 26
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C4": {
+     "cases": 47,
+     "resolved_here": 0,
+     "resolved_here_share": 0.0,
+     "reference_resolved": 21,
+     "agree": 0,
+     "opposite": 0,
+     "lost_to_unresolved": 21,
+     "reference_unresolved": 26,
+     "from_unresolved": {
+      "unresolved": 26
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "pooled_resolved": {
+     "agree": 0,
+     "of": 127,
+     "share": 0.0,
+     "exact_95": [
+      0.0,
+      0.029
+     ],
+     "one_sided_95_lower": 0.0,
+     "participant_bootstrap_95": [
+      0.0,
+      0.0
+     ],
+     "participants": 18
+    },
+    "paired_size": {
+     "n": 47,
+     "median_config_kb": 3.2,
+     "median_full_kb_same_cases": 42.4,
+     "median_ratio": 0.073
+    }
+   },
+   "E1": {
+    "C1": {
+     "cases": 51,
+     "resolved_here": 46,
+     "resolved_here_share": 0.902,
+     "reference_resolved": 47,
+     "agree": 45,
+     "opposite": 0,
+     "lost_to_unresolved": 2,
+     "reference_unresolved": 4,
+     "from_unresolved": {
+      "unresolved": 3,
+      "contradicted": 1
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 1
+    },
+    "C2": {
+     "cases": 51,
+     "resolved_here": 38,
+     "resolved_here_share": 0.745,
+     "reference_resolved": 47,
+     "agree": 38,
+     "opposite": 0,
+     "lost_to_unresolved": 9,
+     "reference_unresolved": 4,
+     "from_unresolved": {
+      "unresolved": 4
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C3": {
+     "cases": 51,
+     "resolved_here": 0,
+     "resolved_here_share": 0.0,
+     "reference_resolved": 27,
+     "agree": 0,
+     "opposite": 0,
+     "lost_to_unresolved": 27,
+     "reference_unresolved": 24,
+     "from_unresolved": {
+      "unresolved": 24
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C4": {
+     "cases": 51,
+     "resolved_here": 0,
+     "resolved_here_share": 0.0,
+     "reference_resolved": 26,
+     "agree": 0,
+     "opposite": 0,
+     "lost_to_unresolved": 26,
+     "reference_unresolved": 25,
+     "from_unresolved": {
+      "unresolved": 25
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "pooled_resolved": {
+     "agree": 83,
+     "of": 147,
+     "share": 0.565,
+     "exact_95": [
+      0.48,
+      0.646
+     ],
+     "one_sided_95_lower": 0.493,
+     "participant_bootstrap_95": [
+      0.482,
+      0.695
+     ],
+     "participants": 17
+    },
+    "paired_size": {
+     "n": 51,
+     "median_config_kb": 22.2,
+     "median_full_kb_same_cases": 41.5,
+     "median_ratio": 0.491
+    }
+   },
+   "E1+E+T": {
+    "C1": {
+     "cases": 54,
+     "resolved_here": 49,
+     "resolved_here_share": 0.907,
+     "reference_resolved": 48,
+     "agree": 48,
+     "opposite": 0,
+     "lost_to_unresolved": 0,
+     "reference_unresolved": 6,
+     "from_unresolved": {
+      "unresolved": 5,
+      "contradicted": 1
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 1
+    },
+    "C2": {
+     "cases": 54,
+     "resolved_here": 48,
+     "resolved_here_share": 0.889,
+     "reference_resolved": 49,
+     "agree": 48,
+     "opposite": 0,
+     "lost_to_unresolved": 1,
+     "reference_unresolved": 5,
+     "from_unresolved": {
+      "unresolved": 5
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C3": {
+     "cases": 54,
+     "resolved_here": 21,
+     "resolved_here_share": 0.389,
+     "reference_resolved": 21,
+     "agree": 21,
+     "opposite": 0,
+     "lost_to_unresolved": 0,
+     "reference_unresolved": 33,
+     "from_unresolved": {
+      "unresolved": 33
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C4": {
+     "cases": 54,
+     "resolved_here": 22,
+     "resolved_here_share": 0.407,
+     "reference_resolved": 21,
+     "agree": 21,
+     "opposite": 0,
+     "lost_to_unresolved": 0,
+     "reference_unresolved": 33,
+     "from_unresolved": {
+      "unresolved": 32,
+      "contradicted": 1
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 1
+    },
+    "pooled_resolved": {
+     "agree": 138,
+     "of": 139,
+     "share": 0.993,
+     "exact_95": [
+      0.961,
+      1.0
+     ],
+     "one_sided_95_lower": 0.966,
+     "participant_bootstrap_95": [
+      0.983,
+      1.0
+     ],
+     "participants": 19
+    },
+    "paired_size": {
+     "n": 54,
+     "median_config_kb": 27.6,
+     "median_full_kb_same_cases": 39.7,
+     "median_ratio": 0.693
+    }
+   },
+   "E1u": {
+    "C1": {
+     "cases": 47,
+     "resolved_here": 45,
+     "resolved_here_share": 0.957,
+     "reference_resolved": 42,
+     "agree": 42,
+     "opposite": 0,
+     "lost_to_unresolved": 0,
+     "reference_unresolved": 5,
+     "from_unresolved": {
+      "contradicted": 2,
+      "unresolved": 2,
+      "supported": 1
+     },
+     "new_support_when_reference_unresolved": 1,
+     "new_contradiction_when_reference_unresolved": 2
+    },
+    "C2": {
+     "cases": 47,
+     "resolved_here": 40,
+     "resolved_here_share": 0.851,
+     "reference_resolved": 43,
+     "agree": 40,
+     "opposite": 0,
+     "lost_to_unresolved": 3,
+     "reference_unresolved": 4,
+     "from_unresolved": {
+      "unresolved": 4
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C3": {
+     "cases": 47,
+     "resolved_here": 0,
+     "resolved_here_share": 0.0,
+     "reference_resolved": 22,
+     "agree": 0,
+     "opposite": 0,
+     "lost_to_unresolved": 22,
+     "reference_unresolved": 25,
+     "from_unresolved": {
+      "unresolved": 25
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C4": {
+     "cases": 47,
+     "resolved_here": 0,
+     "resolved_here_share": 0.0,
+     "reference_resolved": 19,
+     "agree": 0,
+     "opposite": 0,
+     "lost_to_unresolved": 19,
+     "reference_unresolved": 28,
+     "from_unresolved": {
+      "unresolved": 28
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "pooled_resolved": {
+     "agree": 82,
+     "of": 126,
+     "share": 0.651,
+     "exact_95": [
+      0.561,
+      0.734
+     ],
+     "one_sided_95_lower": 0.575,
+     "participant_bootstrap_95": [
+      0.562,
+      0.774
+     ],
+     "participants": 18
+    },
+    "paired_size": {
+     "n": 47,
+     "median_config_kb": 34.3,
+     "median_full_kb_same_cases": 40.7,
+     "median_ratio": 0.833
+    }
+   },
+   "E1u+P": {
+    "C1": {
+     "cases": 59,
+     "resolved_here": 55,
+     "resolved_here_share": 0.932,
+     "reference_resolved": 55,
+     "agree": 55,
+     "opposite": 0,
+     "lost_to_unresolved": 0,
+     "reference_unresolved": 4,
+     "from_unresolved": {
+      "unresolved": 4
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C2": {
+     "cases": 59,
+     "resolved_here": 53,
+     "resolved_here_share": 0.898,
+     "reference_resolved": 55,
+     "agree": 53,
+     "opposite": 0,
+     "lost_to_unresolved": 2,
+     "reference_unresolved": 4,
+     "from_unresolved": {
+      "unresolved": 4
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C3": {
+     "cases": 59,
+     "resolved_here": 20,
+     "resolved_here_share": 0.339,
+     "reference_resolved": 31,
+     "agree": 20,
+     "opposite": 0,
+     "lost_to_unresolved": 11,
+     "reference_unresolved": 28,
+     "from_unresolved": {
+      "unresolved": 28
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C4": {
+     "cases": 59,
+     "resolved_here": 14,
+     "resolved_here_share": 0.237,
+     "reference_resolved": 28,
+     "agree": 14,
+     "opposite": 0,
+     "lost_to_unresolved": 14,
+     "reference_unresolved": 31,
+     "from_unresolved": {
+      "unresolved": 31
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "pooled_resolved": {
+     "agree": 142,
+     "of": 169,
+     "share": 0.84,
+     "exact_95": [
+      0.776,
+      0.892
+     ],
+     "one_sided_95_lower": 0.786,
+     "participant_bootstrap_95": [
+      0.745,
+      0.918
+     ],
+     "participants": 19
+    },
+    "paired_size": {
+     "n": 59,
+     "median_config_kb": 38.3,
+     "median_full_kb_same_cases": 43.3,
+     "median_ratio": 0.848
+    }
+   },
+   "Full-A": {
+    "C1": {
+     "cases": 54,
+     "resolved_here": 24,
+     "resolved_here_share": 0.444,
+     "reference_resolved": 51,
+     "agree": 24,
+     "opposite": 0,
+     "lost_to_unresolved": 27,
+     "reference_unresolved": 3,
+     "from_unresolved": {
+      "unresolved": 3
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C2": {
+     "cases": 54,
+     "resolved_here": 22,
+     "resolved_here_share": 0.407,
+     "reference_resolved": 51,
+     "agree": 22,
+     "opposite": 0,
+     "lost_to_unresolved": 29,
+     "reference_unresolved": 3,
+     "from_unresolved": {
+      "unresolved": 3
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C3": {
+     "cases": 54,
+     "resolved_here": 24,
+     "resolved_here_share": 0.444,
+     "reference_resolved": 32,
+     "agree": 24,
+     "opposite": 0,
+     "lost_to_unresolved": 8,
+     "reference_unresolved": 22,
+     "from_unresolved": {
+      "unresolved": 22
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C4": {
+     "cases": 54,
+     "resolved_here": 21,
+     "resolved_here_share": 0.389,
+     "reference_resolved": 30,
+     "agree": 21,
+     "opposite": 0,
+     "lost_to_unresolved": 9,
+     "reference_unresolved": 24,
+     "from_unresolved": {
+      "unresolved": 24
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "pooled_resolved": {
+     "agree": 91,
+     "of": 164,
+     "share": 0.555,
+     "exact_95": [
+      0.475,
+      0.632
+     ],
+     "one_sided_95_lower": 0.488,
+     "participant_bootstrap_95": [
+      0.316,
+      0.711
+     ],
+     "participants": 17
+    },
+    "paired_size": {
+     "n": 54,
+     "median_config_kb": 23.4,
+     "median_full_kb_same_cases": 43.5,
+     "median_ratio": 0.565
+    }
+   },
+   "Full-E": {
+    "C1": {
+     "cases": 68,
+     "resolved_here": 59,
+     "resolved_here_share": 0.868,
+     "reference_resolved": 59,
+     "agree": 59,
+     "opposite": 0,
+     "lost_to_unresolved": 0,
+     "reference_unresolved": 9,
+     "from_unresolved": {
+      "unresolved": 9
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C2": {
+     "cases": 68,
+     "resolved_here": 60,
+     "resolved_here_share": 0.882,
+     "reference_resolved": 60,
+     "agree": 60,
+     "opposite": 0,
+     "lost_to_unresolved": 0,
+     "reference_unresolved": 8,
+     "from_unresolved": {
+      "unresolved": 8
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C3": {
+     "cases": 68,
+     "resolved_here": 22,
+     "resolved_here_share": 0.324,
+     "reference_resolved": 28,
+     "agree": 21,
+     "opposite": 0,
+     "lost_to_unresolved": 7,
+     "reference_unresolved": 40,
+     "from_unresolved": {
+      "unresolved": 39,
+      "supported": 1
+     },
+     "new_support_when_reference_unresolved": 1,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C4": {
+     "cases": 68,
+     "resolved_here": 21,
+     "resolved_here_share": 0.309,
+     "reference_resolved": 27,
+     "agree": 21,
+     "opposite": 0,
+     "lost_to_unresolved": 6,
+     "reference_unresolved": 41,
+     "from_unresolved": {
+      "unresolved": 41
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "pooled_resolved": {
+     "agree": 161,
+     "of": 174,
+     "share": 0.925,
+     "exact_95": [
+      0.876,
+      0.96
+     ],
+     "one_sided_95_lower": 0.884,
+     "participant_bootstrap_95": [
+      0.856,
+      0.977
+     ],
+     "participants": 16
+    },
+    "paired_size": {
+     "n": 68,
+     "median_config_kb": 36.1,
+     "median_full_kb_same_cases": 42.4,
+     "median_ratio": 0.871
+    }
+   },
+   "Full-P": {
+    "C1": {
+     "cases": 54,
+     "resolved_here": 50,
+     "resolved_here_share": 0.926,
+     "reference_resolved": 50,
+     "agree": 50,
+     "opposite": 0,
+     "lost_to_unresolved": 0,
+     "reference_unresolved": 4,
+     "from_unresolved": {
+      "unresolved": 4
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C2": {
+     "cases": 54,
+     "resolved_here": 47,
+     "resolved_here_share": 0.87,
+     "reference_resolved": 49,
+     "agree": 47,
+     "opposite": 0,
+     "lost_to_unresolved": 2,
+     "reference_unresolved": 5,
+     "from_unresolved": {
+      "unresolved": 5
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C3": {
+     "cases": 54,
+     "resolved_here": 28,
+     "resolved_here_share": 0.519,
+     "reference_resolved": 28,
+     "agree": 28,
+     "opposite": 0,
+     "lost_to_unresolved": 0,
+     "reference_unresolved": 26,
+     "from_unresolved": {
+      "unresolved": 26
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C4": {
+     "cases": 54,
+     "resolved_here": 24,
+     "resolved_here_share": 0.444,
+     "reference_resolved": 25,
+     "agree": 24,
+     "opposite": 0,
+     "lost_to_unresolved": 1,
+     "reference_unresolved": 29,
+     "from_unresolved": {
+      "unresolved": 29
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "pooled_resolved": {
+     "agree": 149,
+     "of": 152,
+     "share": 0.98,
+     "exact_95": [
+      0.943,
+      0.996
+     ],
+     "one_sided_95_lower": 0.95,
+     "participant_bootstrap_95": [
+      0.954,
+      1.0
+     ],
+     "participants": 18
+    },
+    "paired_size": {
+     "n": 54,
+     "median_config_kb": 48.9,
+     "median_full_kb_same_cases": 49.2,
+     "median_ratio": 0.994
+    }
+   },
+   "Full-T": {
+    "C1": {
+     "cases": 59,
+     "resolved_here": 55,
+     "resolved_here_share": 0.932,
+     "reference_resolved": 55,
+     "agree": 55,
+     "opposite": 0,
+     "lost_to_unresolved": 0,
+     "reference_unresolved": 4,
+     "from_unresolved": {
+      "unresolved": 4
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C2": {
+     "cases": 59,
+     "resolved_here": 55,
+     "resolved_here_share": 0.932,
+     "reference_resolved": 57,
+     "agree": 55,
+     "opposite": 0,
+     "lost_to_unresolved": 2,
+     "reference_unresolved": 2,
+     "from_unresolved": {
+      "unresolved": 2
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C3": {
+     "cases": 59,
+     "resolved_here": 30,
+     "resolved_here_share": 0.508,
+     "reference_resolved": 30,
+     "agree": 30,
+     "opposite": 0,
+     "lost_to_unresolved": 0,
+     "reference_unresolved": 29,
+     "from_unresolved": {
+      "unresolved": 29
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C4": {
+     "cases": 59,
+     "resolved_here": 28,
+     "resolved_here_share": 0.475,
+     "reference_resolved": 28,
+     "agree": 28,
+     "opposite": 0,
+     "lost_to_unresolved": 0,
+     "reference_unresolved": 31,
+     "from_unresolved": {
+      "unresolved": 31
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "pooled_resolved": {
+     "agree": 168,
+     "of": 170,
+     "share": 0.988,
+     "exact_95": [
+      0.958,
+      0.999
+     ],
+     "one_sided_95_lower": 0.963,
+     "participant_bootstrap_95": [
+      0.96,
+      1.0
+     ],
+     "participants": 17
+    },
+    "paired_size": {
+     "n": 59,
+     "median_config_kb": 48.8,
+     "median_full_kb_same_cases": 50.1,
+     "median_ratio": 0.985
+    }
+   },
+   "Full-U": {
+    "C1": {
+     "cases": 38,
+     "resolved_here": 34,
+     "resolved_here_share": 0.895,
+     "reference_resolved": 34,
+     "agree": 34,
+     "opposite": 0,
+     "lost_to_unresolved": 0,
+     "reference_unresolved": 4,
+     "from_unresolved": {
+      "unresolved": 4
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C2": {
+     "cases": 38,
+     "resolved_here": 31,
+     "resolved_here_share": 0.816,
+     "reference_resolved": 32,
+     "agree": 31,
+     "opposite": 0,
+     "lost_to_unresolved": 1,
+     "reference_unresolved": 6,
+     "from_unresolved": {
+      "unresolved": 6
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C3": {
+     "cases": 38,
+     "resolved_here": 18,
+     "resolved_here_share": 0.474,
+     "reference_resolved": 18,
+     "agree": 18,
+     "opposite": 0,
+     "lost_to_unresolved": 0,
+     "reference_unresolved": 20,
+     "from_unresolved": {
+      "unresolved": 20
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "C4": {
+     "cases": 38,
+     "resolved_here": 18,
+     "resolved_here_share": 0.474,
+     "reference_resolved": 18,
+     "agree": 18,
+     "opposite": 0,
+     "lost_to_unresolved": 0,
+     "reference_unresolved": 20,
+     "from_unresolved": {
+      "unresolved": 20
+     },
+     "new_support_when_reference_unresolved": 0,
+     "new_contradiction_when_reference_unresolved": 0
+    },
+    "pooled_resolved": {
+     "agree": 101,
+     "of": 102,
+     "share": 0.99,
+     "exact_95": [
+      0.947,
+      1.0
+     ],
+     "one_sided_95_lower": 0.954,
+     "participant_bootstrap_95": [
+      0.963,
+      1.0
+     ],
+     "participants": 14
+    },
+    "paired_size": {
+     "n": 38,
+     "median_config_kb": 36.4,
+     "median_full_kb_same_cases": 49.0,
+     "median_ratio": 0.728
+    }
+   }
+  },
+  "reference_by_device_archive": {
+   "with_device_archive": {
+    "C1": {
+     "supported": 148,
+     "unresolved": 14
+    },
+    "C2": {
+     "supported": 144,
+     "unresolved": 13,
+     "contradicted": 5
+    },
+    "C3": {
+     "supported": 83,
+     "unresolved": 79
+    },
+    "C4": {
+     "supported": 80,
+     "unresolved": 82
+    }
+   },
+   "without_device_archive": {
+    "C1": {
+     "supported": 13,
+     "unresolved": 2
+    },
+    "C2": {
+     "supported": 13,
+     "unresolved": 2
+    },
+    "C3": {
+     "unresolved": 12,
+     "supported": 3
+    },
+    "C4": {
+     "unresolved": 14,
+     "supported": 1
+    }
+   }
+  },
+  "cases_by_device_archive": {
+   "with": 162,
+   "without": 15
+  },
+  "E1+E+T_all_cases": {
+   "C1": {
+    "cases": 177,
+    "resolved_here": 164,
+    "resolved_here_share": 0.927,
+    "reference_resolved": 161,
+    "agree": 161,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 16,
+    "from_unresolved": {
+     "unresolved": 13,
+     "contradicted": 2,
+     "supported": 1
+    },
+    "new_support_when_reference_unresolved": 1,
+    "new_contradiction_when_reference_unresolved": 2
+   },
+   "C2": {
+    "cases": 177,
+    "resolved_here": 156,
+    "resolved_here_share": 0.881,
+    "reference_resolved": 162,
+    "agree": 155,
+    "opposite": 0,
+    "lost_to_unresolved": 7,
+    "reference_unresolved": 15,
+    "from_unresolved": {
+     "unresolved": 14,
+     "supported": 1
+    },
+    "new_support_when_reference_unresolved": 1,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C3": {
+    "cases": 177,
+    "resolved_here": 87,
+    "resolved_here_share": 0.492,
+    "reference_resolved": 86,
+    "agree": 86,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 91,
+    "from_unresolved": {
+     "unresolved": 90,
+     "supported": 1
+    },
+    "new_support_when_reference_unresolved": 1,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C4": {
+    "cases": 177,
+    "resolved_here": 84,
+    "resolved_here_share": 0.475,
+    "reference_resolved": 81,
+    "agree": 80,
+    "opposite": 0,
+    "lost_to_unresolved": 1,
+    "reference_unresolved": 96,
+    "from_unresolved": {
+     "unresolved": 92,
+     "contradicted": 2,
+     "supported": 2
+    },
+    "new_support_when_reference_unresolved": 2,
+    "new_contradiction_when_reference_unresolved": 2
+   },
+   "pooled_resolved": {
+    "agree": 482,
+    "of": 490,
+    "share": 0.984,
+    "exact_95": [
+     0.968,
+     0.993
+    ],
+    "one_sided_95_lower": 0.971,
+    "participant_bootstrap_95": [
+     0.971,
+     1.0
+    ],
+    "participants": 21
+   },
+   "paired_size": {
+    "n": 177,
+    "median_config_kb": 31.3,
+    "median_full_kb_same_cases": 43.0,
+    "median_ratio": 0.676
+   },
+   "extension_packets": 123,
+   "extension_missing_decisions": 0,
+   "extension_agreement_before_consensus": {
+    "n": 492,
+    "raw": 0.959,
+    "ac1": 0.954
+   }
+  },
+  "Full-U_all_cases": {
+   "C1": {
+    "cases": 177,
+    "resolved_here": 165,
+    "resolved_here_share": 0.932,
+    "reference_resolved": 161,
+    "agree": 161,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 16,
+    "from_unresolved": {
+     "unresolved": 12,
+     "contradicted": 3,
+     "supported": 1
+    },
+    "new_support_when_reference_unresolved": 1,
+    "new_contradiction_when_reference_unresolved": 3
+   },
+   "C2": {
+    "cases": 177,
+    "resolved_here": 160,
+    "resolved_here_share": 0.904,
+    "reference_resolved": 162,
+    "agree": 158,
+    "opposite": 0,
+    "lost_to_unresolved": 4,
+    "reference_unresolved": 15,
+    "from_unresolved": {
+     "unresolved": 13,
+     "supported": 2
+    },
+    "new_support_when_reference_unresolved": 2,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C3": {
+    "cases": 177,
+    "resolved_here": 89,
+    "resolved_here_share": 0.503,
+    "reference_resolved": 86,
+    "agree": 86,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 91,
+    "from_unresolved": {
+     "unresolved": 88,
+     "supported": 3
+    },
+    "new_support_when_reference_unresolved": 3,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C4": {
+    "cases": 177,
+    "resolved_here": 85,
+    "resolved_here_share": 0.48,
+    "reference_resolved": 81,
+    "agree": 80,
+    "opposite": 0,
+    "lost_to_unresolved": 1,
+    "reference_unresolved": 96,
+    "from_unresolved": {
+     "unresolved": 91,
+     "supported": 4,
+     "contradicted": 1
+    },
+    "new_support_when_reference_unresolved": 4,
+    "new_contradiction_when_reference_unresolved": 1
+   },
+   "pooled_resolved": {
+    "agree": 485,
+    "of": 490,
+    "share": 0.99,
+    "exact_95": [
+     0.976,
+     0.997
+    ],
+    "one_sided_95_lower": 0.979,
+    "participant_bootstrap_95": [
+     0.979,
+     0.997
+    ],
+    "participants": 21
+   },
+   "paired_size": {
+    "n": 177,
+    "median_config_kb": 31.7,
+    "median_full_kb_same_cases": 43.0,
+    "median_ratio": 0.688
+   },
+   "extension_packets": 139,
+   "extension_missing_decisions": 0,
+   "extension_agreement_before_consensus": {
+    "n": 556,
+    "raw": 0.971,
+    "ac1": 0.968
+   }
+  }
+ },
+ "mechanism_check": {
+  "E0": {
+   "C1": {
+    "cases": 47,
+    "resolved_here": 0,
+    "resolved_here_share": 0.0,
+    "reference_resolved": 42,
+    "agree": 0,
+    "opposite": 0,
+    "lost_to_unresolved": 42,
+    "reference_unresolved": 5,
+    "from_unresolved": {
+     "unresolved": 5
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C2": {
+    "cases": 47,
+    "resolved_here": 0,
+    "resolved_here_share": 0.0,
+    "reference_resolved": 43,
+    "agree": 0,
+    "opposite": 0,
+    "lost_to_unresolved": 43,
+    "reference_unresolved": 4,
+    "from_unresolved": {
+     "unresolved": 4
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C3": {
+    "cases": 47,
+    "resolved_here": 0,
+    "resolved_here_share": 0.0,
+    "reference_resolved": 21,
+    "agree": 0,
+    "opposite": 0,
+    "lost_to_unresolved": 21,
+    "reference_unresolved": 26,
+    "from_unresolved": {
+     "unresolved": 26
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C4": {
+    "cases": 47,
+    "resolved_here": 0,
+    "resolved_here_share": 0.0,
+    "reference_resolved": 21,
+    "agree": 0,
+    "opposite": 0,
+    "lost_to_unresolved": 21,
+    "reference_unresolved": 26,
+    "from_unresolved": {
+     "unresolved": 26
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "pooled_resolved": {
+    "agree": 0,
+    "of": 127,
+    "share": 0.0,
+    "exact_95": [
+     0.0,
+     0.029
+    ],
+    "one_sided_95_lower": 0.0,
+    "participant_bootstrap_95": [
+     0.0,
+     0.0
+    ],
+    "participants": 18
+   },
+   "paired_size": {
+    "n": 47,
+    "median_config_kb": 3.2,
+    "median_full_kb_same_cases": 42.4,
+    "median_ratio": 0.073
+   }
+  },
+  "E1": {
+   "C1": {
+    "cases": 51,
+    "resolved_here": 46,
+    "resolved_here_share": 0.902,
+    "reference_resolved": 47,
+    "agree": 45,
+    "opposite": 0,
+    "lost_to_unresolved": 2,
+    "reference_unresolved": 4,
+    "from_unresolved": {
+     "unresolved": 3,
+     "contradicted": 1
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 1
+   },
+   "C2": {
+    "cases": 51,
+    "resolved_here": 38,
+    "resolved_here_share": 0.745,
+    "reference_resolved": 47,
+    "agree": 38,
+    "opposite": 0,
+    "lost_to_unresolved": 9,
+    "reference_unresolved": 4,
+    "from_unresolved": {
+     "unresolved": 4
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C3": {
+    "cases": 51,
+    "resolved_here": 0,
+    "resolved_here_share": 0.0,
+    "reference_resolved": 27,
+    "agree": 0,
+    "opposite": 0,
+    "lost_to_unresolved": 27,
+    "reference_unresolved": 24,
+    "from_unresolved": {
+     "unresolved": 24
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C4": {
+    "cases": 51,
+    "resolved_here": 0,
+    "resolved_here_share": 0.0,
+    "reference_resolved": 26,
+    "agree": 0,
+    "opposite": 0,
+    "lost_to_unresolved": 26,
+    "reference_unresolved": 25,
+    "from_unresolved": {
+     "unresolved": 25
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "pooled_resolved": {
+    "agree": 83,
+    "of": 147,
+    "share": 0.565,
+    "exact_95": [
+     0.48,
+     0.646
+    ],
+    "one_sided_95_lower": 0.493,
+    "participant_bootstrap_95": [
+     0.482,
+     0.695
+    ],
+    "participants": 17
+   },
+   "paired_size": {
+    "n": 51,
+    "median_config_kb": 22.2,
+    "median_full_kb_same_cases": 41.5,
+    "median_ratio": 0.491
+   }
+  },
+  "E1+E+T": {
+   "C1": {
+    "cases": 54,
+    "resolved_here": 49,
+    "resolved_here_share": 0.907,
+    "reference_resolved": 48,
+    "agree": 48,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 6,
+    "from_unresolved": {
+     "unresolved": 5,
+     "contradicted": 1
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 1
+   },
+   "C2": {
+    "cases": 54,
+    "resolved_here": 48,
+    "resolved_here_share": 0.889,
+    "reference_resolved": 49,
+    "agree": 48,
+    "opposite": 0,
+    "lost_to_unresolved": 1,
+    "reference_unresolved": 5,
+    "from_unresolved": {
+     "unresolved": 5
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C3": {
+    "cases": 54,
+    "resolved_here": 21,
+    "resolved_here_share": 0.389,
+    "reference_resolved": 21,
+    "agree": 6,
+    "opposite": 15,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 33,
+    "from_unresolved": {
+     "unresolved": 33
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C4": {
+    "cases": 54,
+    "resolved_here": 22,
+    "resolved_here_share": 0.407,
+    "reference_resolved": 21,
+    "agree": 21,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 33,
+    "from_unresolved": {
+     "unresolved": 32,
+     "contradicted": 1
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 1
+   },
+   "pooled_resolved": {
+    "agree": 123,
+    "of": 139,
+    "share": 0.885,
+    "exact_95": [
+     0.82,
+     0.933
+    ],
+    "one_sided_95_lower": 0.83,
+    "participant_bootstrap_95": [
+     0.817,
+     0.966
+    ],
+    "participants": 19
+   },
+   "paired_size": {
+    "n": 54,
+    "median_config_kb": 27.6,
+    "median_full_kb_same_cases": 39.7,
+    "median_ratio": 0.693
+   }
+  },
+  "E1u": {
+   "C1": {
+    "cases": 47,
+    "resolved_here": 45,
+    "resolved_here_share": 0.957,
+    "reference_resolved": 42,
+    "agree": 42,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 5,
+    "from_unresolved": {
+     "contradicted": 2,
+     "unresolved": 2,
+     "supported": 1
+    },
+    "new_support_when_reference_unresolved": 1,
+    "new_contradiction_when_reference_unresolved": 2
+   },
+   "C2": {
+    "cases": 47,
+    "resolved_here": 40,
+    "resolved_here_share": 0.851,
+    "reference_resolved": 43,
+    "agree": 40,
+    "opposite": 0,
+    "lost_to_unresolved": 3,
+    "reference_unresolved": 4,
+    "from_unresolved": {
+     "unresolved": 4
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C3": {
+    "cases": 47,
+    "resolved_here": 0,
+    "resolved_here_share": 0.0,
+    "reference_resolved": 22,
+    "agree": 0,
+    "opposite": 0,
+    "lost_to_unresolved": 22,
+    "reference_unresolved": 25,
+    "from_unresolved": {
+     "unresolved": 25
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C4": {
+    "cases": 47,
+    "resolved_here": 0,
+    "resolved_here_share": 0.0,
+    "reference_resolved": 19,
+    "agree": 0,
+    "opposite": 0,
+    "lost_to_unresolved": 19,
+    "reference_unresolved": 28,
+    "from_unresolved": {
+     "unresolved": 28
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "pooled_resolved": {
+    "agree": 82,
+    "of": 126,
+    "share": 0.651,
+    "exact_95": [
+     0.561,
+     0.734
+    ],
+    "one_sided_95_lower": 0.575,
+    "participant_bootstrap_95": [
+     0.562,
+     0.774
+    ],
+    "participants": 18
+   },
+   "paired_size": {
+    "n": 47,
+    "median_config_kb": 34.3,
+    "median_full_kb_same_cases": 40.7,
+    "median_ratio": 0.833
+   }
+  },
+  "E1u+P": {
+   "C1": {
+    "cases": 59,
+    "resolved_here": 55,
+    "resolved_here_share": 0.932,
+    "reference_resolved": 55,
+    "agree": 55,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 4,
+    "from_unresolved": {
+     "unresolved": 4
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C2": {
+    "cases": 59,
+    "resolved_here": 53,
+    "resolved_here_share": 0.898,
+    "reference_resolved": 55,
+    "agree": 53,
+    "opposite": 0,
+    "lost_to_unresolved": 2,
+    "reference_unresolved": 4,
+    "from_unresolved": {
+     "unresolved": 4
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C3": {
+    "cases": 59,
+    "resolved_here": 20,
+    "resolved_here_share": 0.339,
+    "reference_resolved": 31,
+    "agree": 20,
+    "opposite": 0,
+    "lost_to_unresolved": 11,
+    "reference_unresolved": 28,
+    "from_unresolved": {
+     "unresolved": 28
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C4": {
+    "cases": 59,
+    "resolved_here": 14,
+    "resolved_here_share": 0.237,
+    "reference_resolved": 28,
+    "agree": 14,
+    "opposite": 0,
+    "lost_to_unresolved": 14,
+    "reference_unresolved": 31,
+    "from_unresolved": {
+     "unresolved": 31
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "pooled_resolved": {
+    "agree": 142,
+    "of": 169,
+    "share": 0.84,
+    "exact_95": [
+     0.776,
+     0.892
+    ],
+    "one_sided_95_lower": 0.786,
+    "participant_bootstrap_95": [
+     0.745,
+     0.918
+    ],
+    "participants": 19
+   },
+   "paired_size": {
+    "n": 59,
+    "median_config_kb": 38.3,
+    "median_full_kb_same_cases": 43.3,
+    "median_ratio": 0.848
+   }
+  },
+  "Full-A": {
+   "C1": {
+    "cases": 54,
+    "resolved_here": 24,
+    "resolved_here_share": 0.444,
+    "reference_resolved": 51,
+    "agree": 24,
+    "opposite": 0,
+    "lost_to_unresolved": 27,
+    "reference_unresolved": 3,
+    "from_unresolved": {
+     "unresolved": 3
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C2": {
+    "cases": 54,
+    "resolved_here": 22,
+    "resolved_here_share": 0.407,
+    "reference_resolved": 51,
+    "agree": 22,
+    "opposite": 0,
+    "lost_to_unresolved": 29,
+    "reference_unresolved": 3,
+    "from_unresolved": {
+     "unresolved": 3
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C3": {
+    "cases": 54,
+    "resolved_here": 24,
+    "resolved_here_share": 0.444,
+    "reference_resolved": 32,
+    "agree": 23,
+    "opposite": 1,
+    "lost_to_unresolved": 8,
+    "reference_unresolved": 22,
+    "from_unresolved": {
+     "unresolved": 22
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C4": {
+    "cases": 54,
+    "resolved_here": 21,
+    "resolved_here_share": 0.389,
+    "reference_resolved": 30,
+    "agree": 21,
+    "opposite": 0,
+    "lost_to_unresolved": 9,
+    "reference_unresolved": 24,
+    "from_unresolved": {
+     "unresolved": 24
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "pooled_resolved": {
+    "agree": 90,
+    "of": 164,
+    "share": 0.549,
+    "exact_95": [
+     0.469,
+     0.626
+    ],
+    "one_sided_95_lower": 0.482,
+    "participant_bootstrap_95": [
+     0.311,
+     0.706
+    ],
+    "participants": 17
+   },
+   "paired_size": {
+    "n": 54,
+    "median_config_kb": 23.4,
+    "median_full_kb_same_cases": 43.5,
+    "median_ratio": 0.565
+   }
+  },
+  "Full-E": {
+   "C1": {
+    "cases": 68,
+    "resolved_here": 59,
+    "resolved_here_share": 0.868,
+    "reference_resolved": 59,
+    "agree": 59,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 9,
+    "from_unresolved": {
+     "unresolved": 9
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C2": {
+    "cases": 68,
+    "resolved_here": 60,
+    "resolved_here_share": 0.882,
+    "reference_resolved": 60,
+    "agree": 60,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 8,
+    "from_unresolved": {
+     "unresolved": 8
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C3": {
+    "cases": 68,
+    "resolved_here": 22,
+    "resolved_here_share": 0.324,
+    "reference_resolved": 28,
+    "agree": 21,
+    "opposite": 0,
+    "lost_to_unresolved": 7,
+    "reference_unresolved": 40,
+    "from_unresolved": {
+     "unresolved": 39,
+     "supported": 1
+    },
+    "new_support_when_reference_unresolved": 1,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C4": {
+    "cases": 68,
+    "resolved_here": 21,
+    "resolved_here_share": 0.309,
+    "reference_resolved": 27,
+    "agree": 21,
+    "opposite": 0,
+    "lost_to_unresolved": 6,
+    "reference_unresolved": 41,
+    "from_unresolved": {
+     "unresolved": 41
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "pooled_resolved": {
+    "agree": 161,
+    "of": 174,
+    "share": 0.925,
+    "exact_95": [
+     0.876,
+     0.96
+    ],
+    "one_sided_95_lower": 0.884,
+    "participant_bootstrap_95": [
+     0.856,
+     0.977
+    ],
+    "participants": 16
+   },
+   "paired_size": {
+    "n": 68,
+    "median_config_kb": 36.1,
+    "median_full_kb_same_cases": 42.4,
+    "median_ratio": 0.871
+   }
+  },
+  "Full-P": {
+   "C1": {
+    "cases": 54,
+    "resolved_here": 50,
+    "resolved_here_share": 0.926,
+    "reference_resolved": 50,
+    "agree": 50,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 4,
+    "from_unresolved": {
+     "unresolved": 4
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C2": {
+    "cases": 54,
+    "resolved_here": 47,
+    "resolved_here_share": 0.87,
+    "reference_resolved": 49,
+    "agree": 47,
+    "opposite": 0,
+    "lost_to_unresolved": 2,
+    "reference_unresolved": 5,
+    "from_unresolved": {
+     "unresolved": 5
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C3": {
+    "cases": 54,
+    "resolved_here": 28,
+    "resolved_here_share": 0.519,
+    "reference_resolved": 28,
+    "agree": 12,
+    "opposite": 16,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 26,
+    "from_unresolved": {
+     "unresolved": 26
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C4": {
+    "cases": 54,
+    "resolved_here": 24,
+    "resolved_here_share": 0.444,
+    "reference_resolved": 25,
+    "agree": 24,
+    "opposite": 0,
+    "lost_to_unresolved": 1,
+    "reference_unresolved": 29,
+    "from_unresolved": {
+     "unresolved": 29
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "pooled_resolved": {
+    "agree": 133,
+    "of": 152,
+    "share": 0.875,
+    "exact_95": [
+     0.812,
+     0.923
+    ],
+    "one_sided_95_lower": 0.822,
+    "participant_bootstrap_95": [
+     0.8,
+     0.971
+    ],
+    "participants": 18
+   },
+   "paired_size": {
+    "n": 54,
+    "median_config_kb": 48.9,
+    "median_full_kb_same_cases": 49.2,
+    "median_ratio": 0.994
+   }
+  },
+  "Full-T": {
+   "C1": {
+    "cases": 59,
+    "resolved_here": 55,
+    "resolved_here_share": 0.932,
+    "reference_resolved": 55,
+    "agree": 55,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 4,
+    "from_unresolved": {
+     "unresolved": 4
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C2": {
+    "cases": 59,
+    "resolved_here": 55,
+    "resolved_here_share": 0.932,
+    "reference_resolved": 57,
+    "agree": 55,
+    "opposite": 0,
+    "lost_to_unresolved": 2,
+    "reference_unresolved": 2,
+    "from_unresolved": {
+     "unresolved": 2
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C3": {
+    "cases": 59,
+    "resolved_here": 30,
+    "resolved_here_share": 0.508,
+    "reference_resolved": 30,
+    "agree": 30,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 29,
+    "from_unresolved": {
+     "unresolved": 29
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C4": {
+    "cases": 59,
+    "resolved_here": 28,
+    "resolved_here_share": 0.475,
+    "reference_resolved": 28,
+    "agree": 28,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 31,
+    "from_unresolved": {
+     "unresolved": 31
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "pooled_resolved": {
+    "agree": 168,
+    "of": 170,
+    "share": 0.988,
+    "exact_95": [
+     0.958,
+     0.999
+    ],
+    "one_sided_95_lower": 0.963,
+    "participant_bootstrap_95": [
+     0.96,
+     1.0
+    ],
+    "participants": 17
+   },
+   "paired_size": {
+    "n": 59,
+    "median_config_kb": 48.8,
+    "median_full_kb_same_cases": 50.1,
+    "median_ratio": 0.985
+   }
+  },
+  "Full-U": {
+   "C1": {
+    "cases": 38,
+    "resolved_here": 34,
+    "resolved_here_share": 0.895,
+    "reference_resolved": 34,
+    "agree": 34,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 4,
+    "from_unresolved": {
+     "unresolved": 4
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C2": {
+    "cases": 38,
+    "resolved_here": 31,
+    "resolved_here_share": 0.816,
+    "reference_resolved": 32,
+    "agree": 31,
+    "opposite": 0,
+    "lost_to_unresolved": 1,
+    "reference_unresolved": 6,
+    "from_unresolved": {
+     "unresolved": 6
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C3": {
+    "cases": 38,
+    "resolved_here": 18,
+    "resolved_here_share": 0.474,
+    "reference_resolved": 18,
+    "agree": 18,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 20,
+    "from_unresolved": {
+     "unresolved": 20
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C4": {
+    "cases": 38,
+    "resolved_here": 18,
+    "resolved_here_share": 0.474,
+    "reference_resolved": 18,
+    "agree": 18,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 20,
+    "from_unresolved": {
+     "unresolved": 20
+    },
+    "new_support_when_reference_unresolved": 0,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "pooled_resolved": {
+    "agree": 101,
+    "of": 102,
+    "share": 0.99,
+    "exact_95": [
+     0.947,
+     1.0
+    ],
+    "one_sided_95_lower": 0.954,
+    "participant_bootstrap_95": [
+     0.963,
+     1.0
+    ],
+    "participants": 14
+   },
+   "paired_size": {
+    "n": 38,
+    "median_config_kb": 36.4,
+    "median_full_kb_same_cases": 49.0,
+    "median_ratio": 0.728
+   }
+  },
+  "E1+E+T_all_cases": {
+   "C1": {
+    "cases": 177,
+    "resolved_here": 164,
+    "resolved_here_share": 0.927,
+    "reference_resolved": 161,
+    "agree": 161,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 16,
+    "from_unresolved": {
+     "unresolved": 13,
+     "contradicted": 2,
+     "supported": 1
+    },
+    "new_support_when_reference_unresolved": 1,
+    "new_contradiction_when_reference_unresolved": 2
+   },
+   "C2": {
+    "cases": 177,
+    "resolved_here": 156,
+    "resolved_here_share": 0.881,
+    "reference_resolved": 162,
+    "agree": 155,
+    "opposite": 0,
+    "lost_to_unresolved": 7,
+    "reference_unresolved": 15,
+    "from_unresolved": {
+     "unresolved": 14,
+     "supported": 1
+    },
+    "new_support_when_reference_unresolved": 1,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C3": {
+    "cases": 177,
+    "resolved_here": 87,
+    "resolved_here_share": 0.492,
+    "reference_resolved": 86,
+    "agree": 30,
+    "opposite": 56,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 91,
+    "from_unresolved": {
+     "unresolved": 90,
+     "supported": 1
+    },
+    "new_support_when_reference_unresolved": 1,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C4": {
+    "cases": 177,
+    "resolved_here": 84,
+    "resolved_here_share": 0.475,
+    "reference_resolved": 81,
+    "agree": 80,
+    "opposite": 0,
+    "lost_to_unresolved": 1,
+    "reference_unresolved": 96,
+    "from_unresolved": {
+     "unresolved": 92,
+     "contradicted": 2,
+     "supported": 2
+    },
+    "new_support_when_reference_unresolved": 2,
+    "new_contradiction_when_reference_unresolved": 2
+   },
+   "pooled_resolved": {
+    "agree": 426,
+    "of": 490,
+    "share": 0.869,
+    "exact_95": [
+     0.836,
+     0.898
+    ],
+    "one_sided_95_lower": 0.842,
+    "participant_bootstrap_95": [
+     0.802,
+     0.957
+    ],
+    "participants": 21
+   },
+   "paired_size": {
+    "n": 177,
+    "median_config_kb": 31.3,
+    "median_full_kb_same_cases": 43.0,
+    "median_ratio": 0.676
+   },
+   "followup_only": {
+    "agree": 303,
+    "of": 351,
+    "share": 0.863,
+    "exact_95": [
+     0.823,
+     0.897
+    ],
+    "one_sided_95_lower": 0.829,
+    "participant_bootstrap_95": [
+     0.796,
+     0.96
+    ],
+    "participants": 21
+   },
+   "followup_by_prior_prompt_exposure": {
+    "seen_with_prompts": {
+     "cases": 122,
+     "agree": 301,
+     "of": 349,
+     "share": 0.862,
+     "exact_95": [
+      0.822,
+      0.897
+     ],
+     "one_sided_95_lower": 0.828,
+     "participant_bootstrap_95": [
+      0.794,
+      0.96
+     ],
+     "participants": 21
+    },
+    "never_seen_with_prompts": {
+     "cases": 1,
+     "agree": 2,
+     "of": 2,
+     "share": 1.0,
+     "exact_95": [
+      0.158,
+      1.0
+     ],
+     "one_sided_95_lower": 0.224,
+     "participant_bootstrap_95": [
+      1.0,
+      1.0
+     ],
+     "participants": 1
+    }
+   }
+  },
+  "Full-U_all_cases": {
+   "C1": {
+    "cases": 177,
+    "resolved_here": 165,
+    "resolved_here_share": 0.932,
+    "reference_resolved": 161,
+    "agree": 161,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 16,
+    "from_unresolved": {
+     "unresolved": 12,
+     "contradicted": 3,
+     "supported": 1
+    },
+    "new_support_when_reference_unresolved": 1,
+    "new_contradiction_when_reference_unresolved": 3
+   },
+   "C2": {
+    "cases": 177,
+    "resolved_here": 160,
+    "resolved_here_share": 0.904,
+    "reference_resolved": 162,
+    "agree": 158,
+    "opposite": 0,
+    "lost_to_unresolved": 4,
+    "reference_unresolved": 15,
+    "from_unresolved": {
+     "unresolved": 13,
+     "supported": 2
+    },
+    "new_support_when_reference_unresolved": 2,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C3": {
+    "cases": 177,
+    "resolved_here": 89,
+    "resolved_here_share": 0.503,
+    "reference_resolved": 86,
+    "agree": 86,
+    "opposite": 0,
+    "lost_to_unresolved": 0,
+    "reference_unresolved": 91,
+    "from_unresolved": {
+     "unresolved": 88,
+     "supported": 3
+    },
+    "new_support_when_reference_unresolved": 3,
+    "new_contradiction_when_reference_unresolved": 0
+   },
+   "C4": {
+    "cases": 177,
+    "resolved_here": 85,
+    "resolved_here_share": 0.48,
+    "reference_resolved": 81,
+    "agree": 80,
+    "opposite": 0,
+    "lost_to_unresolved": 1,
+    "reference_unresolved": 96,
+    "from_unresolved": {
+     "unresolved": 91,
+     "supported": 4,
+     "contradicted": 1
+    },
+    "new_support_when_reference_unresolved": 4,
+    "new_contradiction_when_reference_unresolved": 1
+   },
+   "pooled_resolved": {
+    "agree": 485,
+    "of": 490,
+    "share": 0.99,
+    "exact_95": [
+     0.976,
+     0.997
+    ],
+    "one_sided_95_lower": 0.979,
+    "participant_bootstrap_95": [
+     0.979,
+     0.997
+    ],
+    "participants": 21
+   },
+   "paired_size": {
+    "n": 177,
+    "median_config_kb": 31.7,
+    "median_full_kb_same_cases": 43.0,
+    "median_ratio": 0.688
+   },
+   "followup_only": {
+    "agree": 384,
+    "of": 388,
+    "share": 0.99,
+    "exact_95": [
+     0.974,
+     0.997
+    ],
+    "one_sided_95_lower": 0.977,
+    "participant_bootstrap_95": [
+     0.978,
+     0.997
+    ],
+    "participants": 21
+   },
+   "followup_by_prior_prompt_exposure": {
+    "seen_with_prompts": {
+     "cases": 138,
+     "agree": 384,
+     "of": 388,
+     "share": 0.99,
+     "exact_95": [
+      0.974,
+      0.997
+     ],
+     "one_sided_95_lower": 0.977,
+     "participant_bootstrap_95": [
+      0.978,
+      0.997
+     ],
+     "participants": 21
+    },
+    "never_seen_with_prompts": {
+     "cases": 1,
+     "agree": 0,
+     "of": 0,
+     "share": null,
+     "exact_95": null,
+     "one_sided_95_lower": null,
+     "participant_bootstrap_95": null,
+     "participants": 0
+    }
+   }
+  }
+ }
+}

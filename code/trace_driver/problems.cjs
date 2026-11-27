@@ -1,0 +1,36 @@
+// Three generic practice problems with reference solutions and local tests.
+module.exports = {
+  1: {
+    thread: "Problem1",
+    statement: "Read two integers A and B separated by a space from standard input and print A + B.",
+    buggy: "a, b = map(int, input().split())\nprint(a - b)\n",
+    bugHint: "It should print the sum of the two integers, but it prints the difference.",
+    own: "def main():\n    x, y = input().split()\n    total = int(x) + int(y)\n    print(total)\n\n\nmain()\n",
+    own2: "import sys\n\nvals = sys.stdin.read().split()\nprint(int(vals[0]) + int(vals[1]))\n",
+    stub: "# TODO: solve the problem\n",
+    tests: [["3 4\n", "7"], ["-5 10\n", "5"], ["1000000000 1000000000\n", "2000000000"]],
+    tweak: { find: null, append: "# end\n" },
+  },
+  2: {
+    thread: "Problem2",
+    statement: "The first line has an integer N. The second line has N integers. Print the N integers in reverse order, separated by spaces.",
+    buggy: "n = int(input())\nnums = input().split()\nprint(' '.join(nums))\n",
+    bugHint: "It should print the numbers in reverse order, but it prints them in the original order.",
+    own: "n = int(input())\nitems = list(map(int, input().split()))\nout = []\nfor i in range(n - 1, -1, -1):\n    out.append(str(items[i]))\nprint(' '.join(out))\n",
+    own2: "input()\nseq = input().split()\nseq.reverse()\nprint(*seq)\n",
+    stub: "# TODO: solve the problem\n",
+    tests: [["3\n1 2 3\n", "3 2 1"], ["1\n42\n", "42"], ["5\n5 -1 0 7 7\n", "7 7 0 -1 5"]],
+    tweak: { find: null, append: "# end\n" },
+  },
+  3: {
+    thread: "Problem3",
+    statement: "Read one line of text from standard input and print the number of words in it (words are separated by one or more spaces).",
+    buggy: "line = input()\nprint(line.count(' '))\n",
+    bugHint: "It should print the number of words, but it counts the spaces, so the answer is wrong when there are several spaces.",
+    own: "text = input()\ncount = 0\nfor w in text.split(' '):\n    if w != '':\n        count += 1\nprint(count)\n",
+    own2: "import sys\nprint(len(sys.stdin.readline().split()))\n",
+    stub: "# TODO: solve the problem\n",
+    tests: [["hello world\n", "2"], ["  a  b   c \n", "3"], ["one\n", "1"]],
+    tweak: { find: null, append: "# end\n" },
+  },
+};

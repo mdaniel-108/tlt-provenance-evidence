@@ -1,0 +1,379 @@
+{
+ "note": "Checks on the CodeNet benchmark and PCK tier-B detection. CodeNet human code is a historical, presumed-human population.",
+ "author_overlap": {
+  "test_human": 360,
+  "from_authors_in_train_or_val": 93,
+  "unmapped": 0,
+  "auc": {
+   "tokenlr__ext__raw": {
+    "all": 0.9345,
+    "without_overlap": 0.9318
+   },
+   "structgb__ext__raw": {
+    "all": 0.9845,
+    "without_overlap": 0.9802
+   },
+   "droid__offshelf__raw": {
+    "all": 0.985,
+    "without_overlap": 0.9838
+   },
+   "unixcoder__ext__raw": {
+    "all": 0.99,
+    "without_overlap": 0.99
+   },
+   "qwenlora__ext__raw": {
+    "all": 0.9925,
+    "without_overlap": 0.9909
+   },
+   "loglik__zeroshot__raw": {
+    "all": 0.8796,
+    "without_overlap": 0.8829
+   },
+   "logrank__zeroshot__raw": {
+    "all": 0.879,
+    "without_overlap": 0.8821
+   },
+   "binoculars__zeroshot__raw": {
+    "all": 0.7606,
+    "without_overlap": 0.7456
+   },
+   "dolos__refs__raw": {
+    "all": 0.8153,
+    "without_overlap": 0.8109
+   }
+  }
+ },
+ "duplicates_train_val_vs_test": {
+  "test_items": 600,
+  "exact_normalized": {
+   "human": 0,
+   "ai": 0
+  },
+  "near_jaccard_ge_0_9": {
+   "human": 0,
+   "ai": 0
+  },
+  "max_jaccard_median": 0.628
+ },
+ "truncation": {
+  "tier_B_n": 780,
+  "tercile_line_cutoffs": [
+   56.0,
+   92.0
+  ],
+  "methods": {
+   "unixcoder": {
+    "limit": 512,
+    "codenet_test_truncated": 0.248,
+    "codenet_test_truncated_ai": 0.15,
+    "codenet_test_truncated_human": 0.314,
+    "tier_B_truncated_by_tercile": {
+     "short": 0.062,
+     "medium": 0.867,
+     "long": 1.0
+    },
+    "tier_B_median_tokens_by_tercile": {
+     "short": 354,
+     "medium": 617,
+     "long": 1384
+    },
+    "tier_B_sensitivity_truncated": {
+     "n": 490,
+     "sensitivity": 0.804
+    },
+    "tier_B_sensitivity_not_truncated": {
+     "n": 290,
+     "sensitivity": 0.959
+    },
+    "long_tercile_sensitivity_truncated": {
+     "n": 252,
+     "sensitivity": 0.722
+    },
+    "long_tercile_sensitivity_not_truncated": {
+     "n": 0,
+     "sensitivity": null
+    }
+   },
+   "qwenlora": {
+    "limit": 512,
+    "codenet_test_truncated": 0.14,
+    "codenet_test_truncated_ai": 0.075,
+    "codenet_test_truncated_human": 0.183,
+    "tier_B_truncated_by_tercile": {
+     "short": 0.015,
+     "medium": 0.525,
+     "long": 1.0
+    },
+    "tier_B_median_tokens_by_tercile": {
+     "short": 297,
+     "medium": 521,
+     "long": 1173
+    },
+    "tier_B_sensitivity_truncated": {
+     "n": 390,
+     "sensitivity": 0.736
+    },
+    "tier_B_sensitivity_not_truncated": {
+     "n": 390,
+     "sensitivity": 0.964
+    },
+    "long_tercile_sensitivity_truncated": {
+     "n": 252,
+     "sensitivity": 0.647
+    },
+    "long_tercile_sensitivity_not_truncated": {
+     "n": 0,
+     "sensitivity": null
+    }
+   },
+   "loglik": {
+    "limit": 1024,
+    "codenet_test_truncated": 0.028,
+    "codenet_test_truncated_ai": 0.017,
+    "codenet_test_truncated_human": 0.036,
+    "tier_B_truncated_by_tercile": {
+     "short": 0.0,
+     "medium": 0.004,
+     "long": 0.651
+    },
+    "tier_B_median_tokens_by_tercile": {
+     "short": 297,
+     "medium": 521,
+     "long": 1173
+    },
+    "tier_B_sensitivity_truncated": {
+     "n": 165,
+     "sensitivity": 0.018
+    },
+    "tier_B_sensitivity_not_truncated": {
+     "n": 615,
+     "sensitivity": 0.036
+    },
+    "long_tercile_sensitivity_truncated": {
+     "n": 164,
+     "sensitivity": 0.018
+    },
+    "long_tercile_sensitivity_not_truncated": {
+     "n": 88,
+     "sensitivity": 0.068
+    }
+   },
+   "droid": {
+    "limit": 1024,
+    "codenet_test_truncated": 0.047,
+    "codenet_test_truncated_ai": 0.025,
+    "codenet_test_truncated_human": 0.061,
+    "tier_B_truncated_by_tercile": {
+     "short": 0.0,
+     "medium": 0.016,
+     "long": 0.81
+    },
+    "tier_B_median_tokens_by_tercile": {
+     "short": 359,
+     "medium": 625,
+     "long": 1389
+    },
+    "tier_B_sensitivity_truncated": {
+     "n": 208,
+     "sensitivity": 0.163
+    },
+    "tier_B_sensitivity_not_truncated": {
+     "n": 572,
+     "sensitivity": 0.802
+    },
+    "long_tercile_sensitivity_truncated": {
+     "n": 204,
+     "sensitivity": 0.167
+    },
+    "long_tercile_sensitivity_not_truncated": {
+     "n": 48,
+     "sensitivity": 0.604
+    }
+   }
+  }
+ },
+ "compile_validity": {
+  "rates": {
+   "codenet_ai|C": {
+    "n": 480,
+    "compiles": 0.912
+   },
+   "codenet_ai|C++": {
+    "n": 480,
+    "compiles": 0.915
+   },
+   "codenet_ai|Java": {
+    "n": 480,
+    "compiles": 0.95
+   },
+   "codenet_ai|all": {
+    "n": 1440,
+    "compiles": 0.926
+   },
+   "codenet_human|C": {
+    "n": 720,
+    "compiles": 0.938
+   },
+   "codenet_human|C++": {
+    "n": 720,
+    "compiles": 0.925
+   },
+   "codenet_human|Java": {
+    "n": 720,
+    "compiles": 0.954
+   },
+   "codenet_human|all": {
+    "n": 2160,
+    "compiles": 0.939
+   },
+   "pck_assistant_block|C": {
+    "n": 162,
+    "compiles": 0.92
+   },
+   "pck_assistant_block|C++": {
+    "n": 731,
+    "compiles": 0.911
+   },
+   "pck_assistant_block|Java": {
+    "n": 306,
+    "compiles": 0.954
+   },
+   "pck_assistant_block|all": {
+    "n": 1199,
+    "compiles": 0.923
+   },
+   "pck_submission|C": {
+    "n": 115,
+    "compiles": 0.939
+   },
+   "pck_submission|C++": {
+    "n": 616,
+    "compiles": 0.946
+   },
+   "pck_submission|Java": {
+    "n": 316,
+    "compiles": 0.883
+   },
+   "pck_submission|all": {
+    "n": 1047,
+    "compiles": 0.926
+   }
+  },
+  "codenet_human_by_status": {
+   "Accepted": {
+    "n": 1439,
+    "compiles": 0.912
+   },
+   "Compile Error": {
+    "n": 215,
+    "compiles": 0.237
+   },
+   "Memory Limit Exceeded": {
+    "n": 10,
+    "compiles": 0.9
+   },
+   "Runtime Error": {
+    "n": 203,
+    "compiles": 0.926
+   },
+   "Time Limit Exceeded": {
+    "n": 124,
+    "compiles": 0.927
+   },
+   "Wrong Answer": {
+    "n": 888,
+    "compiles": 0.928
+   }
+  },
+  "test_compiling": {
+   "n": 551,
+   "human": 337,
+   "ai": 214
+  },
+  "auc_compiling_only": {
+   "tokenlr__ext__raw": {
+    "all": 0.9345,
+    "compiling_only": 0.9414
+   },
+   "structgb__ext__raw": {
+    "all": 0.9845,
+    "compiling_only": 0.9876
+   },
+   "droid__offshelf__raw": {
+    "all": 0.985,
+    "compiling_only": 0.9917
+   },
+   "unixcoder__ext__raw": {
+    "all": 0.99,
+    "compiling_only": 0.9931
+   },
+   "qwenlora__ext__raw": {
+    "all": 0.9925,
+    "compiling_only": 0.9946
+   },
+   "loglik__zeroshot__raw": {
+    "all": 0.8796,
+    "compiling_only": 0.8703
+   },
+   "logrank__zeroshot__raw": {
+    "all": 0.879,
+    "compiling_only": 0.8701
+   },
+   "binoculars__zeroshot__raw": {
+    "all": 0.7606,
+    "compiling_only": 0.7595
+   },
+   "dolos__refs__raw": {
+    "all": 0.8153,
+    "compiling_only": 0.8356
+   }
+  }
+ },
+ "length_matched": {
+  "pairs": 236,
+  "median_chars_ai": 863,
+  "median_chars_human": 856,
+  "unmatched_median_chars": {
+   "ai": 858,
+   "human": 862
+  },
+  "auc": {
+   "tokenlr__ext__raw": {
+    "all": 0.9345,
+    "length_matched": 0.9365
+   },
+   "structgb__ext__raw": {
+    "all": 0.9845,
+    "length_matched": 0.9823
+   },
+   "droid__offshelf__raw": {
+    "all": 0.985,
+    "length_matched": 0.9862
+   },
+   "unixcoder__ext__raw": {
+    "all": 0.99,
+    "length_matched": 0.991
+   },
+   "qwenlora__ext__raw": {
+    "all": 0.9925,
+    "length_matched": 0.9924
+   },
+   "loglik__zeroshot__raw": {
+    "all": 0.8796,
+    "length_matched": 0.8894
+   },
+   "logrank__zeroshot__raw": {
+    "all": 0.879,
+    "length_matched": 0.889
+   },
+   "binoculars__zeroshot__raw": {
+    "all": 0.7606,
+    "length_matched": 0.7661
+   },
+   "dolos__refs__raw": {
+    "all": 0.8153,
+    "length_matched": 0.8283
+   }
+  }
+ }
+}

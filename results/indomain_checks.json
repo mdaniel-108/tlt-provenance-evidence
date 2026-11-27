@@ -1,0 +1,137 @@
+{
+ "near": {
+  "note": "Tier-B near-verbatim submissions vs logged AI blocks in the training data of the in-domain model that scored them (other participant folds).",
+  "n": 780,
+  "median_best_any": 0.571,
+  "median_best_same_problem": 0.553,
+  "share_ge_0_80_any": 0.095,
+  "share_ge_0_99_any": 0.003,
+  "share_ge_0_80_same_problem": 0.087,
+  "share_ge_0_99_same_problem": 0.003
+ },
+ "lopo": {
+  "note": "Flag rates at each model's own 5% CodeNet-validation threshold. participant_out = the paper's PCK-in-domain regime; participant_and_problem_out = 9 models with participants and problem groups held out.",
+  "methods": {
+   "tokenlr": {
+    "participant_out": {
+     "tierB_near": {
+      "n": 780,
+      "flagged": 0.962
+     },
+     "tierB_edited": {
+      "n": 39,
+      "flagged": 1.0
+     },
+     "unknown": {
+      "n": 103,
+      "flagged": 0.942
+     }
+    },
+    "participant_and_problem_out": {
+     "tierB_near": {
+      "n": 780,
+      "flagged": 0.868
+     },
+     "tierB_edited": {
+      "n": 39,
+      "flagged": 0.769
+     },
+     "unknown": {
+      "n": 103,
+      "flagged": 0.903
+     }
+    }
+   },
+   "structgb": {
+    "participant_out": {
+     "tierB_near": {
+      "n": 780,
+      "flagged": 0.928
+     },
+     "tierB_edited": {
+      "n": 39,
+      "flagged": 0.923
+     },
+     "unknown": {
+      "n": 103,
+      "flagged": 0.777
+     }
+    },
+    "participant_and_problem_out": {
+     "tierB_near": {
+      "n": 780,
+      "flagged": 0.915
+     },
+     "tierB_edited": {
+      "n": 39,
+      "flagged": 0.897
+     },
+     "unknown": {
+      "n": 103,
+      "flagged": 0.786
+     }
+    }
+   },
+   "unixcoder": {
+    "participant_out": {
+     "tierB_near": {
+      "n": 780,
+      "flagged": 0.996
+     },
+     "tierB_edited": {
+      "n": 39,
+      "flagged": 1.0
+     },
+     "unknown": {
+      "n": 103,
+      "flagged": 0.903
+     }
+    },
+    "participant_and_problem_out": {
+     "tierB_near": {
+      "n": 780,
+      "flagged": 0.994
+     },
+     "tierB_edited": {
+      "n": 39,
+      "flagged": 0.949
+     },
+     "unknown": {
+      "n": 103,
+      "flagged": 0.864
+     }
+    }
+   },
+   "qwenlora": {
+    "participant_out": {
+     "tierB_near": {
+      "n": 780,
+      "flagged": 0.979
+     },
+     "tierB_edited": {
+      "n": 39,
+      "flagged": 0.974
+     },
+     "unknown": {
+      "n": 103,
+      "flagged": 0.883
+     }
+    },
+    "participant_and_problem_out": {
+     "tierB_near": {
+      "n": 780,
+      "flagged": 0.992
+     },
+     "tierB_edited": {
+      "n": 39,
+      "flagged": 0.974
+     },
+     "unknown": {
+      "n": 103,
+      "flagged": 0.913
+     }
+    }
+   }
+  }
+ }
+}

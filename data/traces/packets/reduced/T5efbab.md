@@ -1,0 +1,48 @@
+# Configuration packet (E1+E+T) T5efbab
+
+Record types present: R-A, R-E, R-T.
+withheld: [R-U, R-P]
+
+## Core
+- problem: 1
+- language: Python
+- verdict: AC
+- submission time: 0 min (all times are minutes relative to the submission; device and judge clocks are separate and uncalibrated)
+
+### Submitted program
+```
+def main():
+    x, y = input().split()
+    total = int(x) + int(y)
+    print(total)
+
+
+main()
+```
+
+## Assistant answers (R-A)
+
+## Editor events and source captures (R-E)
+
+- D1 at -0.2 min: insertion of 84 characters into main.py, version 85
+```
+def main():
+    x, y = input().split()
+    total = int(x) + int(y)
+    print(total)
+
+```
+- D2 at -0.2 min: insertion of 9 characters into main.py, version 94
+```
+
+
+main()
+
+```
+- save at -0.2 min: main.py
+
+Source captures (state of the participant's files):
+- capture at -0.5 min: best same-language file main.py, token similarity to the submitted program 0.000, identical: False
+- capture at -0.2 min: best same-language file main.py, token similarity to the submitted program 1.000, identical: True
+- capture at -0.2 min: best same-language file main.py, token similarity to the submitted program 1.000, identical: True
+

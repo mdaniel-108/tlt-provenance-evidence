@@ -1,0 +1,21 @@
+{
+ "note": "Partial-reuse check: containment measures without a ratio pre-filter, same candidate blocks and window as the labels.",
+ "submissions": 1047,
+ "linked_ratio_ge_0_80": 952,
+ "unlinked": 95,
+ "unlinked_sub_containment_ge_0_80": 4,
+ "unlinked_sub_containment_ge_0_50": 14,
+ "unlinked_blk_containment_ge_0_80": 9,
+ "unlinked_either_ge_0_80": 12,
+ "all_sub_containment_ge_0_80": 940,
+ "min_block_tokens": 20,
+ "argument_order": {
+  "note": "ratio with the block as the first argument instead of the submission",
+  "linked_ge_0_80_reversed": 952,
+  "near_verbatim_ge_0_99_forward": 895,
+  "near_verbatim_ge_0_99_reversed": 895,
+  "linked_status_changes": 0,
+  "near_verbatim_status_changes": 0,
+  "max_abs_difference": 0.0468
+ }
+}

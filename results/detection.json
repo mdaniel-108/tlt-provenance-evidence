@@ -1,0 +1,5206 @@
+{
+ "note": "Thresholds fixed on CodeNet validation human code (5% and 1% flagged). PCK: sensitivity only, by tier and editing stratum; unknown provenance is never treated as human. CodeNet human code is a historical, presumed-human population.",
+ "methods": {
+  "binoculars__zeroshot__norm": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.6881,
+    "pr_auc": 0.5504
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.6469,
+    "pr_auc": 0.6113
+   },
+   "codenet_test_human_fpr_at_val5": 0.061,
+   "codenet_test_auc_C": 0.76,
+   "codenet_test_auc_C++": 0.7202,
+   "codenet_test_auc_Java": 0.6046,
+   "codenet_auc_rename": {
+    "transformed": 0.6255,
+    "original_same_items": 0.6881
+   },
+   "codenet_auc_reformat": {
+    "transformed": 0.6899,
+    "original_same_items": 0.6899
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.014,
+     "ci95": [
+      0.004,
+      0.026
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.001,
+     "ci95": [
+      0.0,
+      0.004
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.016,
+     "ci95": [
+      0.004,
+      0.035
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.012,
+     "ci95": [
+      0.004,
+      0.02
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.001,
+     "ci95": [
+      0.0,
+      0.004
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.026,
+     "ci95": [
+      0.0,
+      0.057
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.018,
+     "ci95": [
+      0.0,
+      0.035
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 87,
+     "sensitivity": 0.011
+    },
+    "language=C++": {
+     "n": 465,
+     "sensitivity": 0.015
+    },
+    "language=Java": {
+     "n": 228,
+     "sensitivity": 0.013
+    },
+    "status=AC": {
+     "n": 163,
+     "sensitivity": 0.025
+    },
+    "status=CE": {
+     "n": 50,
+     "sensitivity": 0.0
+    },
+    "status=MLE": {
+     "n": 18,
+     "sensitivity": 0.0
+    },
+    "status=TLE": {
+     "n": 167,
+     "sensitivity": 0.018
+    },
+    "status=WA": {
+     "n": 382,
+     "sensitivity": 0.01
+    },
+    "length=short": {
+     "n": 273,
+     "sensitivity": 0.011
+    },
+    "length=medium": {
+     "n": 255,
+     "sensitivity": 0.004
+    },
+    "length=long": {
+     "n": 252,
+     "sensitivity": 0.028
+    }
+   }
+  },
+  "binoculars__zeroshot__raw": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.7606,
+    "pr_auc": 0.6145
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.7073,
+    "pr_auc": 0.66
+   },
+   "codenet_test_human_fpr_at_val5": 0.056,
+   "codenet_test_auc_C": 0.8282,
+   "codenet_test_auc_C++": 0.7821,
+   "codenet_test_auc_Java": 0.6855,
+   "codenet_auc_rename": {
+    "transformed": 0.6995,
+    "original_same_items": 0.7606
+   },
+   "codenet_auc_reformat": {
+    "transformed": 0.6928,
+    "original_same_items": 0.7626
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.006,
+     "ci95": [
+      0.0,
+      0.015
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.007,
+     "ci95": [
+      0.0,
+      0.018
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.006,
+     "ci95": [
+      0.0,
+      0.012
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 87,
+     "sensitivity": 0.0
+    },
+    "language=C++": {
+     "n": 465,
+     "sensitivity": 0.009
+    },
+    "language=Java": {
+     "n": 228,
+     "sensitivity": 0.004
+    },
+    "status=AC": {
+     "n": 163,
+     "sensitivity": 0.012
+    },
+    "status=CE": {
+     "n": 50,
+     "sensitivity": 0.0
+    },
+    "status=MLE": {
+     "n": 18,
+     "sensitivity": 0.0
+    },
+    "status=TLE": {
+     "n": 167,
+     "sensitivity": 0.006
+    },
+    "status=WA": {
+     "n": 382,
+     "sensitivity": 0.005
+    },
+    "length=short": {
+     "n": 273,
+     "sensitivity": 0.011
+    },
+    "length=medium": {
+     "n": 255,
+     "sensitivity": 0.004
+    },
+    "length=long": {
+     "n": 252,
+     "sensitivity": 0.004
+    }
+   }
+  },
+  "dolos__refs__raw": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.8153,
+    "pr_auc": 0.7378
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.8083,
+    "pr_auc": 0.7904
+   },
+   "codenet_test_human_fpr_at_val5": 0.014,
+   "codenet_test_auc_C": 0.8313,
+   "codenet_test_auc_C++": 0.8543,
+   "codenet_test_auc_Java": 0.7957,
+   "codenet_auc_rename": {
+    "transformed": null,
+    "original_same_items": 0.8153
+   },
+   "codenet_auc_reformat": {
+    "transformed": null,
+    "original_same_items": 0.8149
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.012,
+     "ci95": [
+      0.003,
+      0.022
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.007,
+     "ci95": [
+      0.0,
+      0.017
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.01,
+     "ci95": [
+      0.002,
+      0.02
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 87,
+     "sensitivity": 0.0
+    },
+    "language=C++": {
+     "n": 465,
+     "sensitivity": 0.004
+    },
+    "language=Java": {
+     "n": 228,
+     "sensitivity": 0.031
+    },
+    "status=AC": {
+     "n": 163,
+     "sensitivity": 0.012
+    },
+    "status=CE": {
+     "n": 50,
+     "sensitivity": 0.0
+    },
+    "status=MLE": {
+     "n": 18,
+     "sensitivity": 0.0
+    },
+    "status=TLE": {
+     "n": 167,
+     "sensitivity": 0.024
+    },
+    "status=WA": {
+     "n": 382,
+     "sensitivity": 0.008
+    },
+    "length=short": {
+     "n": 273,
+     "sensitivity": 0.029
+    },
+    "length=medium": {
+     "n": 255,
+     "sensitivity": 0.004
+    },
+    "length=long": {
+     "n": 252,
+     "sensitivity": 0.0
+    }
+   }
+  },
+  "droid__offshelf__norm": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.8597,
+    "pr_auc": 0.7975
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.8596,
+    "pr_auc": 0.8376
+   },
+   "codenet_test_human_fpr_at_val5": 0.064,
+   "codenet_test_auc_C": 0.9184,
+   "codenet_test_auc_C++": 0.9417,
+   "codenet_test_auc_Java": 0.7975,
+   "codenet_auc_rename": {
+    "transformed": 0.8109,
+    "original_same_items": 0.8597
+   },
+   "codenet_auc_reformat": {
+    "transformed": 0.8593,
+    "original_same_items": 0.8593
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.405,
+     "ci95": [
+      0.347,
+      0.47
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.104,
+     "ci95": [
+      0.07,
+      0.159
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.407,
+     "ci95": [
+      0.348,
+      0.475
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.101,
+     "ci95": [
+      0.058,
+      0.167
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.401,
+     "ci95": [
+      0.349,
+      0.453
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.104,
+     "ci95": [
+      0.072,
+      0.149
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.385,
+     "ci95": [
+      0.258,
+      0.481
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.11,
+     "ci95": [
+      0.043,
+      0.178
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.231,
+     "ci95": [
+      0.083,
+      0.517
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.128,
+     "ci95": [
+      0.0,
+      0.353
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.318,
+     "ci95": [
+      0.105,
+      0.571
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.227,
+     "ci95": [
+      0.0,
+      0.478
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.193,
+     "ci95": [
+      0.091,
+      0.433
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.105,
+     "ci95": [
+      0.017,
+      0.306
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.125,
+     "ci95": [
+      0.0,
+      0.333
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.062,
+     "ci95": [
+      0.0,
+      0.308
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.107,
+     "ci95": [
+      0.059,
+      0.165
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.019,
+     "ci95": [
+      0.0,
+      0.065
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 87,
+     "sensitivity": 0.31
+    },
+    "language=C++": {
+     "n": 465,
+     "sensitivity": 0.398
+    },
+    "language=Java": {
+     "n": 228,
+     "sensitivity": 0.456
+    },
+    "status=AC": {
+     "n": 163,
+     "sensitivity": 0.325
+    },
+    "status=CE": {
+     "n": 50,
+     "sensitivity": 0.56
+    },
+    "status=MLE": {
+     "n": 18,
+     "sensitivity": 0.167
+    },
+    "status=TLE": {
+     "n": 167,
+     "sensitivity": 0.467
+    },
+    "status=WA": {
+     "n": 382,
+     "sensitivity": 0.403
+    },
+    "length=short": {
+     "n": 273,
+     "sensitivity": 0.509
+    },
+    "length=medium": {
+     "n": 255,
+     "sensitivity": 0.529
+    },
+    "length=long": {
+     "n": 252,
+     "sensitivity": 0.167
+    }
+   }
+  },
+  "droid__offshelf__raw": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.985,
+    "pr_auc": 0.9791
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.9758,
+    "pr_auc": 0.9673
+   },
+   "codenet_test_human_fpr_at_val5": 0.025,
+   "codenet_test_auc_C": 0.9871,
+   "codenet_test_auc_C++": 0.9906,
+   "codenet_test_auc_Java": 0.9791,
+   "codenet_auc_rename": {
+    "transformed": 0.9628,
+    "original_same_items": 0.985
+   },
+   "codenet_auc_reformat": {
+    "transformed": 0.8646,
+    "original_same_items": 0.9849
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.632,
+     "ci95": [
+      0.535,
+      0.716
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.451,
+     "ci95": [
+      0.365,
+      0.538
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.635,
+     "ci95": [
+      0.529,
+      0.739
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.443,
+     "ci95": [
+      0.334,
+      0.545
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.634,
+     "ci95": [
+      0.546,
+      0.712
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.457,
+     "ci95": [
+      0.38,
+      0.538
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.661,
+     "ci95": [
+      0.566,
+      0.753
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.505,
+     "ci95": [
+      0.431,
+      0.634
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.333,
+     "ci95": [
+      0.17,
+      0.625
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.256,
+     "ci95": [
+      0.104,
+      0.536
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.455,
+     "ci95": [
+      0.227,
+      0.684
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.364,
+     "ci95": [
+      0.111,
+      0.64
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.281,
+     "ci95": [
+      0.156,
+      0.556
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.228,
+     "ci95": [
+      0.11,
+      0.487
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.188,
+     "ci95": [
+      0.053,
+      0.571
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.188,
+     "ci95": [
+      0.053,
+      0.571
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.204,
+     "ci95": [
+      0.074,
+      0.424
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.078,
+     "ci95": [
+      0.012,
+      0.181
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 87,
+     "sensitivity": 0.563
+    },
+    "language=C++": {
+     "n": 465,
+     "sensitivity": 0.637
+    },
+    "language=Java": {
+     "n": 228,
+     "sensitivity": 0.649
+    },
+    "status=AC": {
+     "n": 163,
+     "sensitivity": 0.54
+    },
+    "status=CE": {
+     "n": 50,
+     "sensitivity": 0.76
+    },
+    "status=MLE": {
+     "n": 18,
+     "sensitivity": 0.889
+    },
+    "status=TLE": {
+     "n": 167,
+     "sensitivity": 0.647
+    },
+    "status=WA": {
+     "n": 382,
+     "sensitivity": 0.636
+    },
+    "length=short": {
+     "n": 273,
+     "sensitivity": 0.846
+    },
+    "length=medium": {
+     "n": 255,
+     "sensitivity": 0.78
+    },
+    "length=long": {
+     "n": 252,
+     "sensitivity": 0.25
+    }
+   }
+  },
+  "droid__offshelf_chunk__raw": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.9733,
+    "pr_auc": 0.949
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.9659,
+    "pr_auc": 0.9553
+   },
+   "codenet_test_human_fpr_at_val5": 0.028,
+   "codenet_test_auc_C": 0.9824,
+   "codenet_test_auc_C++": 0.9866,
+   "codenet_test_auc_Java": 0.9573,
+   "codenet_auc_rename": {
+    "transformed": 0.9465,
+    "original_same_items": 0.9733
+   },
+   "codenet_auc_reformat": {
+    "transformed": 0.838,
+    "original_same_items": 0.9732
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.727,
+     "ci95": [
+      0.615,
+      0.821
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.546,
+     "ci95": [
+      0.446,
+      0.65
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.738,
+     "ci95": [
+      0.614,
+      0.844
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.561,
+     "ci95": [
+      0.44,
+      0.686
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.737,
+     "ci95": [
+      0.638,
+      0.822
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.562,
+     "ci95": [
+      0.468,
+      0.65
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.798,
+     "ci95": [
+      0.73,
+      0.893
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.679,
+     "ci95": [
+      0.607,
+      0.804
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.667,
+     "ci95": [
+      0.56,
+      0.8
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.513,
+     "ci95": [
+      0.333,
+      0.684
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.818,
+     "ci95": [
+      0.64,
+      1.0
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.636,
+     "ci95": [
+      0.348,
+      0.889
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.719,
+     "ci95": [
+      0.609,
+      0.823
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.561,
+     "ci95": [
+      0.418,
+      0.721
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.812,
+     "ci95": [
+      0.571,
+      0.933
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.625,
+     "ci95": [
+      0.483,
+      0.9
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.505,
+     "ci95": [
+      0.356,
+      0.684
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.35,
+     "ci95": [
+      0.254,
+      0.471
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 87,
+     "sensitivity": 0.609
+    },
+    "language=C++": {
+     "n": 465,
+     "sensitivity": 0.718
+    },
+    "language=Java": {
+     "n": 228,
+     "sensitivity": 0.789
+    },
+    "status=AC": {
+     "n": 163,
+     "sensitivity": 0.644
+    },
+    "status=CE": {
+     "n": 50,
+     "sensitivity": 0.8
+    },
+    "status=MLE": {
+     "n": 18,
+     "sensitivity": 0.889
+    },
+    "status=TLE": {
+     "n": 167,
+     "sensitivity": 0.737
+    },
+    "status=WA": {
+     "n": 382,
+     "sensitivity": 0.741
+    },
+    "length=short": {
+     "n": 273,
+     "sensitivity": 0.777
+    },
+    "length=medium": {
+     "n": 255,
+     "sensitivity": 0.698
+    },
+    "length=long": {
+     "n": 252,
+     "sensitivity": 0.702
+    }
+   }
+  },
+  "loglik__zeroshot__norm": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.8151,
+    "pr_auc": 0.7357
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.747,
+    "pr_auc": 0.7153
+   },
+   "codenet_test_human_fpr_at_val5": 0.1,
+   "codenet_test_auc_C": 0.8542,
+   "codenet_test_auc_C++": 0.8538,
+   "codenet_test_auc_Java": 0.7387,
+   "codenet_auc_rename": {
+    "transformed": 0.7089,
+    "original_same_items": 0.8151
+   },
+   "codenet_auc_reformat": {
+    "transformed": 0.8148,
+    "original_same_items": 0.8148
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.142,
+     "ci95": [
+      0.101,
+      0.185
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.027,
+     "ci95": [
+      0.019,
+      0.035
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.163,
+     "ci95": [
+      0.108,
+      0.217
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.029,
+     "ci95": [
+      0.017,
+      0.043
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.141,
+     "ci95": [
+      0.1,
+      0.185
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.027,
+     "ci95": [
+      0.019,
+      0.035
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.138,
+     "ci95": [
+      0.073,
+      0.238
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.028,
+     "ci95": [
+      0.0,
+      0.066
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.077,
+     "ci95": [
+      0.0,
+      0.167
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.136,
+     "ci95": [
+      0.0,
+      0.273
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.088,
+     "ci95": [
+      0.025,
+      0.186
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.125,
+     "ci95": [
+      0.0,
+      0.462
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.146,
+     "ci95": [
+      0.06,
+      0.225
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.029,
+     "ci95": [
+      0.0,
+      0.091
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 87,
+     "sensitivity": 0.103
+    },
+    "language=C++": {
+     "n": 465,
+     "sensitivity": 0.148
+    },
+    "language=Java": {
+     "n": 228,
+     "sensitivity": 0.145
+    },
+    "status=AC": {
+     "n": 163,
+     "sensitivity": 0.074
+    },
+    "status=CE": {
+     "n": 50,
+     "sensitivity": 0.08
+    },
+    "status=MLE": {
+     "n": 18,
+     "sensitivity": 0.5
+    },
+    "status=TLE": {
+     "n": 167,
+     "sensitivity": 0.144
+    },
+    "status=WA": {
+     "n": 382,
+     "sensitivity": 0.162
+    },
+    "length=short": {
+     "n": 273,
+     "sensitivity": 0.073
+    },
+    "length=medium": {
+     "n": 255,
+     "sensitivity": 0.141
+    },
+    "length=long": {
+     "n": 252,
+     "sensitivity": 0.218
+    }
+   }
+  },
+  "loglik__zeroshot__raw": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.8796,
+    "pr_auc": 0.8227
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.8165,
+    "pr_auc": 0.7864
+   },
+   "codenet_test_human_fpr_at_val5": 0.075,
+   "codenet_test_auc_C": 0.9116,
+   "codenet_test_auc_C++": 0.9111,
+   "codenet_test_auc_Java": 0.8248,
+   "codenet_auc_rename": {
+    "transformed": 0.7648,
+    "original_same_items": 0.8796
+   },
+   "codenet_auc_reformat": {
+    "transformed": 0.816,
+    "original_same_items": 0.8794
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.032,
+     "ci95": [
+      0.014,
+      0.048
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.006,
+     "ci95": [
+      0.001,
+      0.013
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.045,
+     "ci95": [
+      0.022,
+      0.066
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.009,
+     "ci95": [
+      0.002,
+      0.02
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.03,
+     "ci95": [
+      0.014,
+      0.047
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.007,
+     "ci95": [
+      0.001,
+      0.014
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.018,
+     "ci95": [
+      0.0,
+      0.039
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.009,
+     "ci95": [
+      0.0,
+      0.019
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.039,
+     "ci95": [
+      0.0,
+      0.121
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 87,
+     "sensitivity": 0.08
+    },
+    "language=C++": {
+     "n": 465,
+     "sensitivity": 0.024
+    },
+    "language=Java": {
+     "n": 228,
+     "sensitivity": 0.031
+    },
+    "status=AC": {
+     "n": 163,
+     "sensitivity": 0.012
+    },
+    "status=CE": {
+     "n": 50,
+     "sensitivity": 0.04
+    },
+    "status=MLE": {
+     "n": 18,
+     "sensitivity": 0.111
+    },
+    "status=TLE": {
+     "n": 167,
+     "sensitivity": 0.048
+    },
+    "status=WA": {
+     "n": 382,
+     "sensitivity": 0.029
+    },
+    "length=short": {
+     "n": 273,
+     "sensitivity": 0.022
+    },
+    "length=medium": {
+     "n": 255,
+     "sensitivity": 0.039
+    },
+    "length=long": {
+     "n": 252,
+     "sensitivity": 0.036
+    }
+   }
+  },
+  "logrank__zeroshot__norm": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.8121,
+    "pr_auc": 0.7417
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.7448,
+    "pr_auc": 0.7298
+   },
+   "codenet_test_human_fpr_at_val5": 0.106,
+   "codenet_test_auc_C": 0.8606,
+   "codenet_test_auc_C++": 0.8736,
+   "codenet_test_auc_Java": 0.7021,
+   "codenet_auc_rename": {
+    "transformed": 0.7061,
+    "original_same_items": 0.8121
+   },
+   "codenet_auc_reformat": {
+    "transformed": 0.8118,
+    "original_same_items": 0.8118
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.1,
+     "ci95": [
+      0.067,
+      0.137
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.026,
+     "ci95": [
+      0.015,
+      0.037
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.114,
+     "ci95": [
+      0.074,
+      0.161
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.031,
+     "ci95": [
+      0.016,
+      0.046
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.099,
+     "ci95": [
+      0.071,
+      0.136
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.025,
+     "ci95": [
+      0.014,
+      0.035
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.101,
+     "ci95": [
+      0.05,
+      0.175
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.018,
+     "ci95": [
+      0.0,
+      0.047
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.026,
+     "ci95": [
+      0.0,
+      0.1
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.045,
+     "ci95": [
+      0.0,
+      0.167
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.053,
+     "ci95": [
+      0.0,
+      0.154
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.125,
+     "ci95": [
+      0.0,
+      0.462
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.087,
+     "ci95": [
+      0.021,
+      0.154
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.019,
+     "ci95": [
+      0.0,
+      0.083
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 87,
+     "sensitivity": 0.103
+    },
+    "language=C++": {
+     "n": 465,
+     "sensitivity": 0.103
+    },
+    "language=Java": {
+     "n": 228,
+     "sensitivity": 0.092
+    },
+    "status=AC": {
+     "n": 163,
+     "sensitivity": 0.074
+    },
+    "status=CE": {
+     "n": 50,
+     "sensitivity": 0.06
+    },
+    "status=MLE": {
+     "n": 18,
+     "sensitivity": 0.5
+    },
+    "status=TLE": {
+     "n": 167,
+     "sensitivity": 0.108
+    },
+    "status=WA": {
+     "n": 382,
+     "sensitivity": 0.094
+    },
+    "length=short": {
+     "n": 273,
+     "sensitivity": 0.077
+    },
+    "length=medium": {
+     "n": 255,
+     "sensitivity": 0.102
+    },
+    "length=long": {
+     "n": 252,
+     "sensitivity": 0.123
+    }
+   }
+  },
+  "logrank__zeroshot__raw": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.879,
+    "pr_auc": 0.8312
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.8163,
+    "pr_auc": 0.8049
+   },
+   "codenet_test_human_fpr_at_val5": 0.053,
+   "codenet_test_auc_C": 0.9136,
+   "codenet_test_auc_C++": 0.9192,
+   "codenet_test_auc_Java": 0.8124,
+   "codenet_auc_rename": {
+    "transformed": 0.7541,
+    "original_same_items": 0.879
+   },
+   "codenet_auc_reformat": {
+    "transformed": 0.8089,
+    "original_same_items": 0.8787
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.015,
+     "ci95": [
+      0.007,
+      0.023
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.004,
+     "ci95": [
+      0.0,
+      0.011
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.022,
+     "ci95": [
+      0.011,
+      0.035
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.005,
+     "ci95": [
+      0.0,
+      0.016
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.016,
+     "ci95": [
+      0.008,
+      0.023
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.004,
+     "ci95": [
+      0.0,
+      0.012
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.018,
+     "ci95": [
+      0.0,
+      0.041
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.009,
+     "ci95": [
+      0.0,
+      0.02
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 87,
+     "sensitivity": 0.057
+    },
+    "language=C++": {
+     "n": 465,
+     "sensitivity": 0.009
+    },
+    "language=Java": {
+     "n": 228,
+     "sensitivity": 0.013
+    },
+    "status=AC": {
+     "n": 163,
+     "sensitivity": 0.006
+    },
+    "status=CE": {
+     "n": 50,
+     "sensitivity": 0.02
+    },
+    "status=MLE": {
+     "n": 18,
+     "sensitivity": 0.0
+    },
+    "status=TLE": {
+     "n": 167,
+     "sensitivity": 0.024
+    },
+    "status=WA": {
+     "n": 382,
+     "sensitivity": 0.016
+    },
+    "length=short": {
+     "n": 273,
+     "sensitivity": 0.011
+    },
+    "length=medium": {
+     "n": 255,
+     "sensitivity": 0.016
+    },
+    "length=long": {
+     "n": 252,
+     "sensitivity": 0.02
+    }
+   }
+  },
+  "qwenlora__ext__raw": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.9925,
+    "pr_auc": 0.983
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.9932,
+    "pr_auc": 0.9868
+   },
+   "codenet_test_human_fpr_at_val5": 0.039,
+   "codenet_test_auc_C": 0.9941,
+   "codenet_test_auc_C++": 0.9981,
+   "codenet_test_auc_Java": 0.9829,
+   "codenet_auc_rename": {
+    "transformed": 0.9915,
+    "original_same_items": 0.9925
+   },
+   "codenet_auc_reformat": {
+    "transformed": 0.9664,
+    "original_same_items": 0.9924
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.85,
+     "ci95": [
+      0.81,
+      0.891
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.632,
+     "ci95": [
+      0.545,
+      0.71
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.841,
+     "ci95": [
+      0.799,
+      0.888
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.622,
+     "ci95": [
+      0.526,
+      0.713
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.864,
+     "ci95": [
+      0.83,
+      0.896
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.639,
+     "ci95": [
+      0.561,
+      0.708
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.963,
+     "ci95": [
+      0.939,
+      0.986
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.697,
+     "ci95": [
+      0.624,
+      0.79
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.667,
+     "ci95": [
+      0.451,
+      0.893
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.436,
+     "ci95": [
+      0.289,
+      0.643
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.818,
+     "ci95": [
+      0.667,
+      0.957
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.5,
+     "ci95": [
+      0.294,
+      0.714
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.667,
+     "ci95": [
+      0.452,
+      0.838
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.404,
+     "ci95": [
+      0.255,
+      0.591
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.688,
+     "ci95": [
+      0.25,
+      0.867
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.312,
+     "ci95": [
+      0.0,
+      0.5
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.573,
+     "ci95": [
+      0.36,
+      0.694
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.388,
+     "ci95": [
+      0.213,
+      0.483
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 87,
+     "sensitivity": 0.897
+    },
+    "language=C++": {
+     "n": 465,
+     "sensitivity": 0.862
+    },
+    "language=Java": {
+     "n": 228,
+     "sensitivity": 0.807
+    },
+    "status=AC": {
+     "n": 163,
+     "sensitivity": 0.798
+    },
+    "status=CE": {
+     "n": 50,
+     "sensitivity": 0.88
+    },
+    "status=MLE": {
+     "n": 18,
+     "sensitivity": 1.0
+    },
+    "status=TLE": {
+     "n": 167,
+     "sensitivity": 0.79
+    },
+    "status=WA": {
+     "n": 382,
+     "sensitivity": 0.887
+    },
+    "length=short": {
+     "n": 273,
+     "sensitivity": 0.952
+    },
+    "length=medium": {
+     "n": 255,
+     "sensitivity": 0.941
+    },
+    "length=long": {
+     "n": 252,
+     "sensitivity": 0.647
+    }
+   }
+  },
+  "qwenlora__ext_ht__raw": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.9989,
+    "pr_auc": 0.9984
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.9996,
+    "pr_auc": 0.9996
+   },
+   "codenet_test_human_fpr_at_val5": 0.042,
+   "codenet_test_auc_C": 0.9992,
+   "codenet_test_auc_C++": 0.9989,
+   "codenet_test_auc_Java": 0.9989,
+   "codenet_auc_rename": {
+    "transformed": 0.9948,
+    "original_same_items": 0.9989
+   },
+   "codenet_auc_reformat": {
+    "transformed": 0.9815,
+    "original_same_items": 0.9989
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.84,
+     "ci95": [
+      0.705,
+      0.936
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.742,
+     "ci95": [
+      0.59,
+      0.864
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.81,
+     "ci95": [
+      0.649,
+      0.931
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.716,
+     "ci95": [
+      0.537,
+      0.86
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.854,
+     "ci95": [
+      0.744,
+      0.939
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.761,
+     "ci95": [
+      0.63,
+      0.866
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.954,
+     "ci95": [
+      0.93,
+      0.985
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.899,
+     "ci95": [
+      0.854,
+      0.967
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.769,
+     "ci95": [
+      0.533,
+      0.95
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.513,
+     "ci95": [
+      0.312,
+      0.75
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.818,
+     "ci95": [
+      0.545,
+      1.0
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.591,
+     "ci95": [
+      0.348,
+      0.818
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.772,
+     "ci95": [
+      0.548,
+      0.915
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.561,
+     "ci95": [
+      0.319,
+      0.742
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.875,
+     "ci95": [
+      0.571,
+      1.0
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.75,
+     "ci95": [
+      0.25,
+      0.963
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.718,
+     "ci95": [
+      0.432,
+      0.85
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.544,
+     "ci95": [
+      0.327,
+      0.658
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 87,
+     "sensitivity": 0.563
+    },
+    "language=C++": {
+     "n": 465,
+     "sensitivity": 0.895
+    },
+    "language=Java": {
+     "n": 228,
+     "sensitivity": 0.833
+    },
+    "status=AC": {
+     "n": 163,
+     "sensitivity": 0.779
+    },
+    "status=CE": {
+     "n": 50,
+     "sensitivity": 0.84
+    },
+    "status=MLE": {
+     "n": 18,
+     "sensitivity": 0.944
+    },
+    "status=TLE": {
+     "n": 167,
+     "sensitivity": 0.892
+    },
+    "status=WA": {
+     "n": 382,
+     "sensitivity": 0.838
+    },
+    "length=short": {
+     "n": 273,
+     "sensitivity": 0.864
+    },
+    "length=medium": {
+     "n": 255,
+     "sensitivity": 0.882
+    },
+    "length=long": {
+     "n": 252,
+     "sensitivity": 0.77
+    }
+   }
+  },
+  "qwenlora__pck0__raw": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.9959,
+    "pr_auc": 0.9948
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.9983,
+    "pr_auc": 0.9985
+   },
+   "codenet_test_human_fpr_at_val5": 0.042,
+   "codenet_test_auc_C": 0.9961,
+   "codenet_test_auc_C++": 0.9964,
+   "codenet_test_auc_Java": 0.9943,
+   "codenet_auc_rename": {
+    "transformed": null,
+    "original_same_items": 0.9959
+   },
+   "codenet_auc_reformat": {
+    "transformed": null,
+    "original_same_items": 0.9959
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.979,
+     "ci95": [
+      0.967,
+      0.991
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.958,
+     "ci95": [
+      0.934,
+      0.981
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.975,
+     "ci95": [
+      0.957,
+      0.991
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.953,
+     "ci95": [
+      0.923,
+      0.982
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.982,
+     "ci95": [
+      0.97,
+      0.993
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.961,
+     "ci95": [
+      0.937,
+      0.983
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.991,
+     "ci95": [
+      0.963,
+      1.0
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.974,
+     "ci95": [
+      0.909,
+      1.0
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.923,
+     "ci95": [
+      0.778,
+      1.0
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.955,
+     "ci95": [
+      0.857,
+      1.0
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.909,
+     "ci95": [
+      0.773,
+      1.0
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.947,
+     "ci95": [
+      0.87,
+      1.0
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.912,
+     "ci95": [
+      0.778,
+      0.98
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.875,
+     "ci95": [
+      0.583,
+      1.0
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.875,
+     "ci95": [
+      0.571,
+      1.0
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.883,
+     "ci95": [
+      0.636,
+      0.988
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.825,
+     "ci95": [
+      0.585,
+      0.949
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 76,
+     "sensitivity": 0.961
+    },
+    "language=C++": {
+     "n": 187,
+     "sensitivity": 0.979
+    },
+    "language=Java": {
+     "n": 71,
+     "sensitivity": 0.972
+    },
+    "status=AC": {
+     "n": 62,
+     "sensitivity": 0.984
+    },
+    "status=CE": {
+     "n": 29,
+     "sensitivity": 0.966
+    },
+    "status=TLE": {
+     "n": 66,
+     "sensitivity": 0.985
+    },
+    "status=WA": {
+     "n": 173,
+     "sensitivity": 0.965
+    },
+    "length=short": {
+     "n": 129,
+     "sensitivity": 1.0
+    },
+    "length=medium": {
+     "n": 100,
+     "sensitivity": 0.97
+    },
+    "length=long": {
+     "n": 105,
+     "sensitivity": 0.943
+    }
+   }
+  },
+  "structgb__ext__raw": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.9845,
+    "pr_auc": 0.971
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.9882,
+    "pr_auc": 0.9848
+   },
+   "codenet_test_human_fpr_at_val5": 0.064,
+   "codenet_test_auc_C": 0.9927,
+   "codenet_test_auc_C++": 0.9782,
+   "codenet_test_auc_Java": 0.9817,
+   "codenet_auc_rename": {
+    "transformed": 0.9775,
+    "original_same_items": 0.9845
+   },
+   "codenet_auc_reformat": {
+    "transformed": 0.7999,
+    "original_same_items": 0.9845
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.417,
+     "ci95": [
+      0.316,
+      0.505
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.083,
+     "ci95": [
+      0.046,
+      0.126
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.396,
+     "ci95": [
+      0.287,
+      0.503
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.072,
+     "ci95": [
+      0.036,
+      0.115
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.427,
+     "ci95": [
+      0.349,
+      0.512
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.088,
+     "ci95": [
+      0.055,
+      0.126
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.514,
+     "ci95": [
+      0.42,
+      0.649
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.119,
+     "ci95": [
+      0.079,
+      0.172
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.359,
+     "ci95": [
+      0.189,
+      0.679
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.103,
+     "ci95": [
+      0.019,
+      0.276
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.5,
+     "ci95": [
+      0.25,
+      0.739
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.136,
+     "ci95": [
+      0.0,
+      0.316
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.404,
+     "ci95": [
+      0.267,
+      0.6
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.07,
+     "ci95": [
+      0.013,
+      0.211
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.562,
+     "ci95": [
+      0.2,
+      0.875
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.214,
+     "ci95": [
+      0.098,
+      0.351
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.029,
+     "ci95": [
+      0.0,
+      0.091
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 87,
+     "sensitivity": 0.264
+    },
+    "language=C++": {
+     "n": 465,
+     "sensitivity": 0.447
+    },
+    "language=Java": {
+     "n": 228,
+     "sensitivity": 0.412
+    },
+    "status=AC": {
+     "n": 163,
+     "sensitivity": 0.344
+    },
+    "status=CE": {
+     "n": 50,
+     "sensitivity": 0.56
+    },
+    "status=MLE": {
+     "n": 18,
+     "sensitivity": 0.667
+    },
+    "status=TLE": {
+     "n": 167,
+     "sensitivity": 0.377
+    },
+    "status=WA": {
+     "n": 382,
+     "sensitivity": 0.435
+    },
+    "length=short": {
+     "n": 273,
+     "sensitivity": 0.641
+    },
+    "length=medium": {
+     "n": 255,
+     "sensitivity": 0.478
+    },
+    "length=long": {
+     "n": 252,
+     "sensitivity": 0.111
+    }
+   }
+  },
+  "structgb__pck0__raw": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.9787,
+    "pr_auc": 0.9601
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.9871,
+    "pr_auc": 0.981
+   },
+   "codenet_test_human_fpr_at_val5": 0.083,
+   "codenet_test_auc_C": 0.9927,
+   "codenet_test_auc_C++": 0.9746,
+   "codenet_test_auc_Java": 0.9674,
+   "codenet_auc_rename": {
+    "transformed": null,
+    "original_same_items": 0.9787
+   },
+   "codenet_auc_reformat": {
+    "transformed": null,
+    "original_same_items": 0.9787
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.928,
+     "ci95": [
+      0.868,
+      0.97
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.767,
+     "ci95": [
+      0.674,
+      0.842
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.917,
+     "ci95": [
+      0.851,
+      0.963
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.743,
+     "ci95": [
+      0.642,
+      0.82
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.932,
+     "ci95": [
+      0.876,
+      0.97
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.768,
+     "ci95": [
+      0.672,
+      0.834
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.972,
+     "ci95": [
+      0.932,
+      1.0
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.78,
+     "ci95": [
+      0.707,
+      0.867
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.923,
+     "ci95": [
+      0.707,
+      1.0
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.795,
+     "ci95": [
+      0.607,
+      0.947
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.909,
+     "ci95": [
+      0.7,
+      1.0
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.773,
+     "ci95": [
+      0.55,
+      1.0
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.93,
+     "ci95": [
+      0.756,
+      1.0
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.825,
+     "ci95": [
+      0.633,
+      0.924
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.938,
+     "ci95": [
+      0.667,
+      1.0
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.875,
+     "ci95": [
+      0.571,
+      1.0
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.777,
+     "ci95": [
+      0.515,
+      0.911
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.621,
+     "ci95": [
+      0.4,
+      0.763
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 76,
+     "sensitivity": 0.908
+    },
+    "language=C++": {
+     "n": 187,
+     "sensitivity": 0.85
+    },
+    "language=Java": {
+     "n": 71,
+     "sensitivity": 0.887
+    },
+    "status=AC": {
+     "n": 62,
+     "sensitivity": 0.726
+    },
+    "status=CE": {
+     "n": 29,
+     "sensitivity": 0.931
+    },
+    "status=TLE": {
+     "n": 66,
+     "sensitivity": 0.848
+    },
+    "status=WA": {
+     "n": 173,
+     "sensitivity": 0.931
+    },
+    "length=short": {
+     "n": 129,
+     "sensitivity": 0.791
+    },
+    "length=medium": {
+     "n": 100,
+     "sensitivity": 0.92
+    },
+    "length=long": {
+     "n": 105,
+     "sensitivity": 0.924
+    }
+   }
+  },
+  "tokenlr__ext__norm": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.9298,
+    "pr_auc": 0.9104
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.9771,
+    "pr_auc": 0.9757
+   },
+   "codenet_test_human_fpr_at_val5": 0.042,
+   "codenet_test_auc_C": 0.8947,
+   "codenet_test_auc_C++": 0.9534,
+   "codenet_test_auc_Java": 0.9374,
+   "codenet_auc_rename": {
+    "transformed": 0.897,
+    "original_same_items": 0.9298
+   },
+   "codenet_auc_reformat": {
+    "transformed": 0.9296,
+    "original_same_items": 0.9296
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.424,
+     "ci95": [
+      0.328,
+      0.526
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.291,
+     "ci95": [
+      0.201,
+      0.396
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.41,
+     "ci95": [
+      0.289,
+      0.535
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.268,
+     "ci95": [
+      0.164,
+      0.387
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.428,
+     "ci95": [
+      0.34,
+      0.519
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.295,
+     "ci95": [
+      0.216,
+      0.389
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.468,
+     "ci95": [
+      0.394,
+      0.6
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.339,
+     "ci95": [
+      0.22,
+      0.461
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.231,
+     "ci95": [
+      0.103,
+      0.444
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.154,
+     "ci95": [
+      0.039,
+      0.345
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.227,
+     "ci95": [
+      0.045,
+      0.455
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.136,
+     "ci95": [
+      0.0,
+      0.3
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.193,
+     "ci95": [
+      0.086,
+      0.385
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.14,
+     "ci95": [
+      0.035,
+      0.333
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.125,
+     "ci95": [
+      0.0,
+      0.4
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.125,
+     "ci95": [
+      0.0,
+      0.444
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.262,
+     "ci95": [
+      0.124,
+      0.396
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.097,
+     "ci95": [
+      0.0,
+      0.276
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 87,
+     "sensitivity": 0.471
+    },
+    "language=C++": {
+     "n": 465,
+     "sensitivity": 0.497
+    },
+    "language=Java": {
+     "n": 228,
+     "sensitivity": 0.259
+    },
+    "status=AC": {
+     "n": 163,
+     "sensitivity": 0.331
+    },
+    "status=CE": {
+     "n": 50,
+     "sensitivity": 0.5
+    },
+    "status=MLE": {
+     "n": 18,
+     "sensitivity": 0.556
+    },
+    "status=TLE": {
+     "n": 167,
+     "sensitivity": 0.383
+    },
+    "status=WA": {
+     "n": 382,
+     "sensitivity": 0.466
+    },
+    "length=short": {
+     "n": 273,
+     "sensitivity": 0.637
+    },
+    "length=medium": {
+     "n": 255,
+     "sensitivity": 0.482
+    },
+    "length=long": {
+     "n": 252,
+     "sensitivity": 0.135
+    }
+   }
+  },
+  "tokenlr__ext__raw": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.9345,
+    "pr_auc": 0.9161
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.9789,
+    "pr_auc": 0.9772
+   },
+   "codenet_test_human_fpr_at_val5": 0.039,
+   "codenet_test_auc_C": 0.9006,
+   "codenet_test_auc_C++": 0.9561,
+   "codenet_test_auc_Java": 0.944,
+   "codenet_auc_rename": {
+    "transformed": 0.896,
+    "original_same_items": 0.9345
+   },
+   "codenet_auc_reformat": {
+    "transformed": 0.9269,
+    "original_same_items": 0.9343
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.355,
+     "ci95": [
+      0.266,
+      0.455
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.192,
+     "ci95": [
+      0.121,
+      0.281
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.344,
+     "ci95": [
+      0.232,
+      0.476
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.174,
+     "ci95": [
+      0.095,
+      0.276
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.363,
+     "ci95": [
+      0.281,
+      0.455
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.2,
+     "ci95": [
+      0.13,
+      0.279
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.44,
+     "ci95": [
+      0.355,
+      0.544
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.266,
+     "ci95": [
+      0.111,
+      0.366
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.205,
+     "ci95": [
+      0.091,
+      0.364
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.103,
+     "ci95": [
+      0.0,
+      0.25
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.182,
+     "ci95": [
+      0.045,
+      0.35
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.091,
+     "ci95": [
+      0.0,
+      0.25
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.175,
+     "ci95": [
+      0.071,
+      0.34
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.105,
+     "ci95": [
+      0.018,
+      0.283
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.125,
+     "ci95": [
+      0.0,
+      0.444
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.125,
+     "ci95": [
+      0.0,
+      0.429
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.117,
+     "ci95": [
+      0.018,
+      0.312
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.068,
+     "ci95": [
+      0.0,
+      0.194
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 87,
+     "sensitivity": 0.345
+    },
+    "language=C++": {
+     "n": 465,
+     "sensitivity": 0.417
+    },
+    "language=Java": {
+     "n": 228,
+     "sensitivity": 0.232
+    },
+    "status=AC": {
+     "n": 163,
+     "sensitivity": 0.264
+    },
+    "status=CE": {
+     "n": 50,
+     "sensitivity": 0.38
+    },
+    "status=MLE": {
+     "n": 18,
+     "sensitivity": 0.556
+    },
+    "status=TLE": {
+     "n": 167,
+     "sensitivity": 0.311
+    },
+    "status=WA": {
+     "n": 382,
+     "sensitivity": 0.401
+    },
+    "length=short": {
+     "n": 273,
+     "sensitivity": 0.568
+    },
+    "length=medium": {
+     "n": 255,
+     "sensitivity": 0.4
+    },
+    "length=long": {
+     "n": 252,
+     "sensitivity": 0.079
+    }
+   }
+  },
+  "tokenlr__pck0__norm": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.9208,
+    "pr_auc": 0.9052
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.9713,
+    "pr_auc": 0.9697
+   },
+   "codenet_test_human_fpr_at_val5": 0.028,
+   "codenet_test_auc_C": 0.8885,
+   "codenet_test_auc_C++": 0.9432,
+   "codenet_test_auc_Java": 0.9345,
+   "codenet_auc_rename": {
+    "transformed": null,
+    "original_same_items": 0.9208
+   },
+   "codenet_auc_reformat": {
+    "transformed": null,
+    "original_same_items": 0.9206
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.945,
+     "ci95": [
+      0.894,
+      0.983
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.869,
+     "ci95": [
+      0.77,
+      0.948
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.933,
+     "ci95": [
+      0.872,
+      0.981
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.844,
+     "ci95": [
+      0.713,
+      0.94
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.949,
+     "ci95": [
+      0.901,
+      0.981
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.874,
+     "ci95": [
+      0.776,
+      0.943
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.982,
+     "ci95": [
+      0.96,
+      1.0
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.917,
+     "ci95": [
+      0.872,
+      1.0
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.923,
+     "ci95": [
+      0.721,
+      1.0
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.692,
+     "ci95": [
+      0.364,
+      0.93
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.864,
+     "ci95": [
+      0.591,
+      1.0
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.636,
+     "ci95": [
+      0.381,
+      0.882
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.947,
+     "ci95": [
+      0.795,
+      1.0
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.754,
+     "ci95": [
+      0.413,
+      0.953
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.875,
+     "ci95": [
+      0.455,
+      1.0
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.932,
+     "ci95": [
+      0.85,
+      0.988
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.874,
+     "ci95": [
+      0.785,
+      0.939
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 76,
+     "sensitivity": 0.947
+    },
+    "language=C++": {
+     "n": 187,
+     "sensitivity": 1.0
+    },
+    "language=Java": {
+     "n": 71,
+     "sensitivity": 0.859
+    },
+    "status=AC": {
+     "n": 62,
+     "sensitivity": 0.952
+    },
+    "status=CE": {
+     "n": 29,
+     "sensitivity": 0.862
+    },
+    "status=TLE": {
+     "n": 66,
+     "sensitivity": 0.985
+    },
+    "status=WA": {
+     "n": 173,
+     "sensitivity": 0.965
+    },
+    "length=short": {
+     "n": 129,
+     "sensitivity": 0.93
+    },
+    "length=medium": {
+     "n": 100,
+     "sensitivity": 0.97
+    },
+    "length=long": {
+     "n": 105,
+     "sensitivity": 0.981
+    }
+   }
+  },
+  "tokenlr__pck0__raw": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.9191,
+    "pr_auc": 0.9059
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.9728,
+    "pr_auc": 0.9713
+   },
+   "codenet_test_human_fpr_at_val5": 0.039,
+   "codenet_test_auc_C": 0.8848,
+   "codenet_test_auc_C++": 0.9432,
+   "codenet_test_auc_Java": 0.9304,
+   "codenet_auc_rename": {
+    "transformed": null,
+    "original_same_items": 0.9191
+   },
+   "codenet_auc_reformat": {
+    "transformed": null,
+    "original_same_items": 0.9188
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.962,
+     "ci95": [
+      0.927,
+      0.989
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.919,
+     "ci95": [
+      0.862,
+      0.966
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.948,
+     "ci95": [
+      0.899,
+      0.987
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.901,
+     "ci95": [
+      0.829,
+      0.96
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.963,
+     "ci95": [
+      0.931,
+      0.988
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.924,
+     "ci95": [
+      0.871,
+      0.966
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.982,
+     "ci95": [
+      0.958,
+      1.0
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.963,
+     "ci95": [
+      0.921,
+      1.0
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.897,
+     "ci95": [
+      0.743,
+      1.0
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.818,
+     "ci95": [
+      0.632,
+      1.0
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.93,
+     "ci95": [
+      0.8,
+      0.992
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.942,
+     "ci95": [
+      0.872,
+      0.988
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.932,
+     "ci95": [
+      0.851,
+      0.99
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 76,
+     "sensitivity": 0.974
+    },
+    "language=C++": {
+     "n": 187,
+     "sensitivity": 0.995
+    },
+    "language=Java": {
+     "n": 71,
+     "sensitivity": 0.915
+    },
+    "status=AC": {
+     "n": 62,
+     "sensitivity": 0.952
+    },
+    "status=CE": {
+     "n": 29,
+     "sensitivity": 0.897
+    },
+    "status=TLE": {
+     "n": 66,
+     "sensitivity": 0.985
+    },
+    "status=WA": {
+     "n": 173,
+     "sensitivity": 0.988
+    },
+    "length=short": {
+     "n": 129,
+     "sensitivity": 0.953
+    },
+    "length=medium": {
+     "n": 100,
+     "sensitivity": 0.97
+    },
+    "length=long": {
+     "n": 105,
+     "sensitivity": 1.0
+    }
+   }
+  },
+  "unixcoder__ext__raw": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.99,
+    "pr_auc": 0.9855
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.9907,
+    "pr_auc": 0.9883
+   },
+   "codenet_test_human_fpr_at_val5": 0.053,
+   "codenet_test_auc_C": 0.9949,
+   "codenet_test_auc_C++": 0.9878,
+   "codenet_test_auc_Java": 0.9816,
+   "codenet_auc_rename": {
+    "transformed": 0.9848,
+    "original_same_items": 0.99
+   },
+   "codenet_auc_reformat": {
+    "transformed": 0.9598,
+    "original_same_items": 0.99
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.862,
+     "ci95": [
+      0.804,
+      0.916
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.391,
+     "ci95": [
+      0.342,
+      0.449
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.852,
+     "ci95": [
+      0.777,
+      0.915
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.373,
+     "ci95": [
+      0.311,
+      0.445
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.863,
+     "ci95": [
+      0.809,
+      0.912
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.406,
+     "ci95": [
+      0.357,
+      0.463
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.862,
+     "ci95": [
+      0.744,
+      0.973
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.505,
+     "ci95": [
+      0.355,
+      0.614
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.821,
+     "ci95": [
+      0.684,
+      0.946
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.282,
+     "ci95": [
+      0.169,
+      0.464
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.818,
+     "ci95": [
+      0.65,
+      0.955
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.364,
+     "ci95": [
+      0.158,
+      0.577
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.719,
+     "ci95": [
+      0.587,
+      0.909
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.228,
+     "ci95": [
+      0.133,
+      0.4
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.5,
+     "ci95": [
+      0.296,
+      0.9
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.125,
+     "ci95": [
+      0.0,
+      0.333
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.456,
+     "ci95": [
+      0.294,
+      0.74
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.175,
+     "ci95": [
+      0.082,
+      0.361
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 87,
+     "sensitivity": 0.828
+    },
+    "language=C++": {
+     "n": 465,
+     "sensitivity": 0.877
+    },
+    "language=Java": {
+     "n": 228,
+     "sensitivity": 0.842
+    },
+    "status=AC": {
+     "n": 163,
+     "sensitivity": 0.81
+    },
+    "status=CE": {
+     "n": 50,
+     "sensitivity": 0.92
+    },
+    "status=MLE": {
+     "n": 18,
+     "sensitivity": 1.0
+    },
+    "status=TLE": {
+     "n": 167,
+     "sensitivity": 0.82
+    },
+    "status=WA": {
+     "n": 382,
+     "sensitivity": 0.887
+    },
+    "length=short": {
+     "n": 273,
+     "sensitivity": 0.945
+    },
+    "length=medium": {
+     "n": 255,
+     "sensitivity": 0.91
+    },
+    "length=long": {
+     "n": 252,
+     "sensitivity": 0.722
+    }
+   }
+  },
+  "unixcoder__ext_ht__raw": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.9938,
+    "pr_auc": 0.9918
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.9954,
+    "pr_auc": 0.9952
+   },
+   "codenet_test_human_fpr_at_val5": 0.047,
+   "codenet_test_auc_C": 0.9969,
+   "codenet_test_auc_C++": 0.9938,
+   "codenet_test_auc_Java": 0.9919,
+   "codenet_auc_rename": {
+    "transformed": 0.9869,
+    "original_same_items": 0.9938
+   },
+   "codenet_auc_reformat": {
+    "transformed": 0.9565,
+    "original_same_items": 0.9938
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.929,
+     "ci95": [
+      0.903,
+      0.955
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.364,
+     "ci95": [
+      0.305,
+      0.424
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.919,
+     "ci95": [
+      0.885,
+      0.95
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.367,
+     "ci95": [
+      0.311,
+      0.427
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.93,
+     "ci95": [
+      0.902,
+      0.955
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.382,
+     "ci95": [
+      0.318,
+      0.448
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.936,
+     "ci95": [
+      0.824,
+      1.0
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.514,
+     "ci95": [
+      0.315,
+      0.642
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.897,
+     "ci95": [
+      0.818,
+      1.0
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.179,
+     "ci95": [
+      0.034,
+      0.313
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.864,
+     "ci95": [
+      0.714,
+      1.0
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.182,
+     "ci95": [
+      0.0,
+      0.391
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.895,
+     "ci95": [
+      0.788,
+      0.976
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.158,
+     "ci95": [
+      0.05,
+      0.268
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.875,
+     "ci95": [
+      0.429,
+      1.0
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.125,
+     "ci95": [
+      0.0,
+      0.333
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.699,
+     "ci95": [
+      0.516,
+      0.817
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.146,
+     "ci95": [
+      0.046,
+      0.3
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 87,
+     "sensitivity": 0.92
+    },
+    "language=C++": {
+     "n": 465,
+     "sensitivity": 0.914
+    },
+    "language=Java": {
+     "n": 228,
+     "sensitivity": 0.965
+    },
+    "status=AC": {
+     "n": 163,
+     "sensitivity": 0.963
+    },
+    "status=CE": {
+     "n": 50,
+     "sensitivity": 0.94
+    },
+    "status=MLE": {
+     "n": 18,
+     "sensitivity": 1.0
+    },
+    "status=TLE": {
+     "n": 167,
+     "sensitivity": 0.862
+    },
+    "status=WA": {
+     "n": 382,
+     "sensitivity": 0.94
+    },
+    "length=short": {
+     "n": 273,
+     "sensitivity": 0.978
+    },
+    "length=medium": {
+     "n": 255,
+     "sensitivity": 0.898
+    },
+    "length=long": {
+     "n": 252,
+     "sensitivity": 0.909
+    }
+   }
+  },
+  "unixcoder__pck0__raw": {
+   "codenet_test_unseen_problems": {
+    "roc_auc": 0.9937,
+    "pr_auc": 0.9922
+   },
+   "codenet_test_seen_problems": {
+    "roc_auc": 0.9969,
+    "pr_auc": 0.9964
+   },
+   "codenet_test_human_fpr_at_val5": 0.05,
+   "codenet_test_auc_C": 0.9943,
+   "codenet_test_auc_C++": 0.9904,
+   "codenet_test_auc_Java": 0.9952,
+   "codenet_auc_rename": {
+    "transformed": null,
+    "original_same_items": 0.9937
+   },
+   "codenet_auc_reformat": {
+    "transformed": null,
+    "original_same_items": 0.9937
+   },
+   "pck": {
+    "tier_B|near_verbatim|fpr5": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.996,
+     "ci95": [
+      0.989,
+      1.0
+     ]
+    },
+    "tier_B|near_verbatim|fpr1": {
+     "n": 780,
+     "participants": 21,
+     "sensitivity": 0.958,
+     "ci95": [
+      0.932,
+      0.981
+     ]
+    },
+    "tier_A|near_verbatim|fpr5": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.995,
+     "ci95": [
+      0.984,
+      1.0
+     ]
+    },
+    "tier_A|near_verbatim|fpr1": {
+     "n": 553,
+     "participants": 21,
+     "sensitivity": 0.944,
+     "ci95": [
+      0.907,
+      0.973
+     ]
+    },
+    "tier_C|near_verbatim|fpr5": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.997,
+     "ci95": [
+      0.99,
+      1.0
+     ]
+    },
+    "tier_C|near_verbatim|fpr1": {
+     "n": 895,
+     "participants": 21,
+     "sensitivity": 0.96,
+     "ci95": [
+      0.936,
+      0.98
+     ]
+    },
+    "b_chain|near_verbatim|fpr5": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "b_chain|near_verbatim|fpr1": {
+     "n": 109,
+     "participants": 12,
+     "sensitivity": 0.972,
+     "ci95": [
+      0.942,
+      1.0
+     ]
+    },
+    "tier_B|edited|fpr5": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "tier_B|edited|fpr1": {
+     "n": 39,
+     "participants": 12,
+     "sensitivity": 0.949,
+     "ci95": [
+      0.853,
+      1.0
+     ]
+    },
+    "tier_A|edited|fpr5": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "tier_A|edited|fpr1": {
+     "n": 22,
+     "participants": 11,
+     "sensitivity": 0.909,
+     "ci95": [
+      0.778,
+      1.0
+     ]
+    },
+    "tier_C|edited|fpr5": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.982,
+     "ci95": [
+      0.927,
+      1.0
+     ]
+    },
+    "tier_C|edited|fpr1": {
+     "n": 57,
+     "participants": 13,
+     "sensitivity": 0.93,
+     "ci95": [
+      0.828,
+      0.984
+     ]
+    },
+    "b_chain|edited|fpr5": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.938,
+     "ci95": [
+      0.667,
+      1.0
+     ]
+    },
+    "b_chain|edited|fpr1": {
+     "n": 16,
+     "participants": 6,
+     "sensitivity": 0.875,
+     "ci95": [
+      0.556,
+      1.0
+     ]
+    },
+    "unknown|all|fpr5": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.903,
+     "ci95": [
+      0.684,
+      1.0
+     ]
+    },
+    "unknown|all|fpr1": {
+     "n": 103,
+     "participants": 15,
+     "sensitivity": 0.854,
+     "ci95": [
+      0.615,
+      0.97
+     ]
+    }
+   },
+   "tier_B_near_verbatim_breakdown_fpr5": {
+    "language=C": {
+     "n": 76,
+     "sensitivity": 1.0
+    },
+    "language=C++": {
+     "n": 187,
+     "sensitivity": 0.995
+    },
+    "language=Java": {
+     "n": 71,
+     "sensitivity": 1.0
+    },
+    "status=AC": {
+     "n": 62,
+     "sensitivity": 1.0
+    },
+    "status=CE": {
+     "n": 29,
+     "sensitivity": 1.0
+    },
+    "status=TLE": {
+     "n": 66,
+     "sensitivity": 0.985
+    },
+    "status=WA": {
+     "n": 173,
+     "sensitivity": 1.0
+    },
+    "length=short": {
+     "n": 129,
+     "sensitivity": 1.0
+    },
+    "length=medium": {
+     "n": 100,
+     "sensitivity": 1.0
+    },
+    "length=long": {
+     "n": 105,
+     "sensitivity": 0.99
+    }
+   }
+  }
+ },
+ "leave_one_generator_out": {
+  "structgb__raw__heldout_granite": {
+   "unseen_generator": 0.9711,
+   "seen_generator_ext": 0.9752
+  },
+  "structgb__raw__heldout_llama": {
+   "unseen_generator": 0.9808,
+   "seen_generator_ext": 0.9865
+  },
+  "structgb__raw__heldout_phi": {
+   "unseen_generator": 0.9857,
+   "seen_generator_ext": 0.9865
+  },
+  "structgb__raw__heldout_qwen": {
+   "unseen_generator": 0.9833,
+   "seen_generator_ext": 0.9899
+  },
+  "tokenlr__norm__heldout_granite": {
+   "unseen_generator": 0.774,
+   "seen_generator_ext": 0.8519
+  },
+  "tokenlr__raw__heldout_granite": {
+   "unseen_generator": 0.785,
+   "seen_generator_ext": 0.86
+  },
+  "tokenlr__norm__heldout_llama": {
+   "unseen_generator": 0.8461,
+   "seen_generator_ext": 0.9316
+  },
+  "tokenlr__raw__heldout_llama": {
+   "unseen_generator": 0.8566,
+   "seen_generator_ext": 0.9369
+  },
+  "tokenlr__norm__heldout_phi": {
+   "unseen_generator": 0.9476,
+   "seen_generator_ext": 0.9649
+  },
+  "tokenlr__raw__heldout_phi": {
+   "unseen_generator": 0.9547,
+   "seen_generator_ext": 0.9694
+  },
+  "tokenlr__norm__heldout_qwen": {
+   "unseen_generator": 0.9641,
+   "seen_generator_ext": 0.9706
+  },
+  "tokenlr__raw__heldout_qwen": {
+   "unseen_generator": 0.965,
+   "seen_generator_ext": 0.9717
+  },
+  "unixcoder__raw__heldout_granite": {
+   "unseen_generator": 0.9568,
+   "seen_generator_ext": 0.9771
+  },
+  "unixcoder__raw__heldout_llama": {
+   "unseen_generator": 0.9989,
+   "seen_generator_ext": 0.9941
+  },
+  "unixcoder__raw__heldout_phi": {
+   "unseen_generator": 0.998,
+   "seen_generator_ext": 0.9944
+  },
+  "unixcoder__raw__heldout_qwen": {
+   "unseen_generator": 0.9988,
+   "seen_generator_ext": 0.9944
+  }
+ },
+ "fusion_stacking": {
+  "inputs": [
+   "binoculars__zeroshot__raw",
+   "droid__offshelf__raw",
+   "loglik__zeroshot__raw",
+   "logrank__zeroshot__raw",
+   "qwenlora__ext__raw",
+   "structgb__ext__raw",
+   "tokenlr__ext__raw",
+   "unixcoder__ext__raw"
+  ],
+  "codenet_test_roc_auc": 0.9956,
+  "pck_tier_B_near_verbatim_fpr5": {
+   "n": 780,
+   "participants": 21,
+   "sensitivity": 0.796,
+   "ci95": [
+    0.73,
+    0.849
+   ]
+  }
+ },
+ "fusion_cascade": {
+  "stage1": "tokenlr__ext__raw",
+  "stage2": "qwenlora__ext__raw",
+  "band": [
+   0.2525,
+   0.6124
+  ],
+  "codenet_test_escalated_share": 0.257,
+  "codenet_test_human_fpr": 0.05,
+  "codenet_test_ai_sensitivity": 0.933,
+  "pck_tier_B_near_verbatim": {
+   "n": 780,
+   "participants": 21,
+   "sensitivity": 0.708,
+   "ci95": [
+    0.632,
+    0.787
+   ]
+  },
+  "pck_escalated_share": 0.397
+ },
+ "non_finite_scores_dropped": {
+  "binoculars__zeroshot__norm": 2,
+  "binoculars__zeroshot__raw": 2,
+  "loglik__zeroshot__norm": 2,
+  "loglik__zeroshot__raw": 2,
+  "logrank__zeroshot__norm": 2,
+  "logrank__zeroshot__raw": 2
+ }
+}

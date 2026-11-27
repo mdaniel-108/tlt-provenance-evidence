@@ -1,0 +1,73 @@
+{
+  "cases": 60,
+  "agreement": {
+    "EQ1": {
+      "n": 60,
+      "raw": 1.0,
+      "ac1": 1.0
+    },
+    "EQ2": {
+      "n": 60,
+      "raw": 0.817,
+      "ac1": 0.781
+    },
+    "EQ3": {
+      "n": 60,
+      "raw": 0.933,
+      "ac1": 0.923
+    },
+    "EQ4": {
+      "n": 60,
+      "raw": 0.917,
+      "ac1": 0.894
+    },
+    "EQ5": {
+      "n": 60,
+      "raw": 0.95,
+      "ac1": 0.921
+    }
+  },
+  "consensus_items": 23,
+  "EQ4_by_stratum": {
+    "D": {
+      "mixed": 3,
+      "mostly_new": 26,
+      "mostly_echo": 1
+    },
+    "AN": {
+      "mostly_new": 15
+    },
+    "AE": {
+      "mixed": 3,
+      "mostly_echo": 11,
+      "mostly_new": 1
+    }
+  },
+  "EQ3_by_stratum": {
+    "D": {
+      "yes_earlier_ai": 10,
+      "no": 2,
+      "not_applicable": 16,
+      "cannot_tell": 2
+    },
+    "AN": {
+      "not_applicable": 15
+    },
+    "AE": {
+      "yes_earlier_ai": 14,
+      "partly": 1
+    }
+  },
+  "EQ1_by_stratum": {
+    "D": {
+      "yes": 30
+    },
+    "AN": {
+      "yes": 15
+    },
+    "AE": {
+      "yes": 15
+    }
+  },
+  "note": "Two echo auditors and a consensus coder. Strata: D rules disagree, AN both mostly new, AE both mostly echo."
+}

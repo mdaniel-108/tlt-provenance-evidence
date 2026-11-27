@@ -1,0 +1,31 @@
+{
+  "eligible_problems": {
+    "AIZU": 326,
+    "AtCoder": 748
+  },
+  "chosen": 120,
+  "chosen_by_dataset": {
+    "AtCoder": 60,
+    "AIZU": 60
+  },
+  "split": {
+    "train": 80,
+    "val": 20,
+    "test": 20
+  },
+  "human_submissions": 2160,
+  "human_by_language": {
+    "C": 720,
+    "C++": 720,
+    "Java": 720
+  },
+  "human_by_status": {
+    "Accepted": 1080,
+    "Compile Error": 169,
+    "Wrong Answer": 662,
+    "Time Limit Exceeded": 92,
+    "Runtime Error": 149,
+    "Memory Limit Exceeded": 8
+  },
+  "distinct_human_users": 1773
+}

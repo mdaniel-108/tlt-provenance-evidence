@@ -1,0 +1,39 @@
+{
+  "note": "Automatic chaining rule, one link, earliest qualifying earlier AI block whose own contribution is new in its request. Population: near-verbatim submissions outside tier B (not mostly new under the same-request rule).",
+  "candidates": 115,
+  "candidate_participants": 13,
+  "candidates_by_stratum": {
+    "AE": 115
+  },
+  "b_chain": {
+    "90min": {
+      "n": 109,
+      "of": 115,
+      "share": 0.948,
+      "participants": 12,
+      "median_lag_min": 14.7
+    },
+    "180min": {
+      "n": 109,
+      "of": 115,
+      "share": 0.948,
+      "participants": 12,
+      "median_lag_min": 16.4
+    },
+    "all": {
+      "n": 109,
+      "of": 115,
+      "share": 0.948,
+      "participants": 12,
+      "median_lag_min": 16.4
+    }
+  },
+  "audit_comparison_all_window": {
+    "audited_candidates": 15,
+    "table": {
+      "rule_chain|EQ3_yes_earlier_ai": 14,
+      "rule_no_chain|EQ3_cannot_tell": 1
+    },
+    "note": "Coded EQ3 of the audited cases."
+  }
+}

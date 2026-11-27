@@ -1,0 +1,14 @@
+# Python 3.11+ (analysis was run with 3.12-3.14)
+numpy
+scipy
+pandas
+scikit-learn
+statsmodels
+xgboost
+matplotlib
+torch
+transformers
+peft
+boto3          # trace export from the local object store only
+pydantic
+# Node.js 20+ with playwright-core for the scripted trace driver (code/trace_driver)

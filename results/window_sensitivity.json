@@ -1,0 +1,31 @@
+{
+  "note": "Near-verbatim submissions with an X1 match (containment >= 0.99 per submission_linkage). Broad-rule lookback varied; matching fixed.",
+  "near_verbatim_matched": 895,
+  "tier_B_same_request": 780,
+  "tier_A_broad": {
+    "30min": {
+      "n": 633,
+      "of": 895,
+      "share": 0.707,
+      "participants": 21
+    },
+    "60min": {
+      "n": 584,
+      "of": 895,
+      "share": 0.653,
+      "participants": 21
+    },
+    "90min": {
+      "n": 553,
+      "of": 895,
+      "share": 0.618,
+      "participants": 21
+    },
+    "180min": {
+      "n": 525,
+      "of": 895,
+      "share": 0.587,
+      "participants": 21
+    }
+  }
+}

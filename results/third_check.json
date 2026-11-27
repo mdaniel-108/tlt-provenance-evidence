@@ -1,0 +1,68 @@
+{
+ "note": "Independent third adjudication (blind to which cases and claims were disputed, with decoys) of the decisions that E1+E+T reviewers made where the full-record reference was unresolved.",
+ "disputed_decisions": 9,
+ "outcome": {
+  "agrees_with_reference_unresolved": 6,
+  "agrees_with_reduced": 3
+ },
+ "by_decision": [
+  {
+   "claim": "C1",
+   "reduced": "contradicted",
+   "third": "unresolved",
+   "verdict": "agrees_with_reference_unresolved"
+  },
+  {
+   "claim": "C4",
+   "reduced": "contradicted",
+   "third": "unresolved",
+   "verdict": "agrees_with_reference_unresolved"
+  },
+  {
+   "claim": "C1",
+   "reduced": "contradicted",
+   "third": "contradicted",
+   "verdict": "agrees_with_reduced"
+  },
+  {
+   "claim": "C4",
+   "reduced": "contradicted",
+   "third": "unresolved",
+   "verdict": "agrees_with_reference_unresolved"
+  },
+  {
+   "claim": "C4",
+   "reduced": "supported",
+   "third": "supported",
+   "verdict": "agrees_with_reduced"
+  },
+  {
+   "claim": "C1",
+   "reduced": "supported",
+   "third": "unresolved",
+   "verdict": "agrees_with_reference_unresolved"
+  },
+  {
+   "claim": "C2",
+   "reduced": "supported",
+   "third": "unresolved",
+   "verdict": "agrees_with_reference_unresolved"
+  },
+  {
+   "claim": "C3",
+   "reduced": "supported",
+   "third": "supported",
+   "verdict": "agrees_with_reduced"
+  },
+  {
+   "claim": "C4",
+   "reduced": "supported",
+   "third": "unresolved",
+   "verdict": "agrees_with_reference_unresolved"
+  }
+ ],
+ "decoy_agreement_with_reference": {
+  "agree": 38,
+  "differ": 2
+ }
+}

@@ -1,0 +1,297 @@
+{
+ "la_table_extended": {
+  "by_label": {
+   "Records": {
+    "gap": -0.243,
+    "gap_ci": [
+     -0.438,
+     -0.11
+    ],
+    "mh_or_within_problem": 0.254,
+    "mh_or_ci": [
+     0.085,
+     0.576
+    ],
+    "fe_or_participant_problem": 0.345,
+    "rho": -0.611,
+    "rho_ci": [
+     -0.797,
+     -0.376
+    ]
+   },
+   "UniXcoder": {
+    "gap": -0.101,
+    "gap_ci": [
+     -0.202,
+     -0.028
+    ],
+    "mh_or_within_problem": 0.42,
+    "mh_or_ci": [
+     0.231,
+     0.645
+    ],
+    "fe_or_participant_problem": 0.449,
+    "rho": -0.388,
+    "rho_ci": [
+     -0.815,
+     -0.033
+    ],
+    "gap_diff_records_minus": -0.143,
+    "gap_diff_ci": [
+     -0.31,
+     -0.02
+    ],
+    "rho_diff_records_minus": -0.223,
+    "rho_diff_ci": [
+     -0.561,
+     0.253
+    ],
+    "agreement_with_record_label": 0.823,
+    "flagged_among_record_ai": 0.854,
+    "flagged_among_unknown": 0.456
+   },
+   "Qwen + LoRA": {
+    "gap": -0.102,
+    "gap_ci": [
+     -0.182,
+     -0.034
+    ],
+    "mh_or_within_problem": 0.459,
+    "mh_or_ci": [
+     0.305,
+     0.642
+    ],
+    "fe_or_participant_problem": 0.428,
+    "rho": -0.176,
+    "rho_ci": [
+     -0.589,
+     0.264
+    ],
+    "gap_diff_records_minus": -0.141,
+    "gap_diff_ci": [
+     -0.328,
+     0.001
+    ],
+    "rho_diff_records_minus": -0.435,
+    "rho_diff_ci": [
+     -0.909,
+     0.065
+    ],
+    "agreement_with_record_label": 0.811,
+    "flagged_among_record_ai": 0.853,
+    "flagged_among_unknown": 0.573
+   },
+   "DroidDetect": {
+    "gap": -0.097,
+    "gap_ci": [
+     -0.168,
+     -0.028
+    ],
+    "mh_or_within_problem": 0.297,
+    "mh_or_ci": [
+     0.18,
+     0.472
+    ],
+    "fe_or_participant_problem": 0.273,
+    "rho": -0.375,
+    "rho_ci": [
+     -0.746,
+     -0.007
+    ],
+    "gap_diff_records_minus": -0.146,
+    "gap_diff_ci": [
+     -0.35,
+     0.0
+    ],
+    "rho_diff_records_minus": -0.236,
+    "rho_diff_ci": [
+     -0.602,
+     0.235
+    ],
+    "agreement_with_record_label": 0.633,
+    "flagged_among_record_ai": 0.615,
+    "flagged_among_unknown": 0.204
+   },
+   "Structural GB": {
+    "gap": -0.059,
+    "gap_ci": [
+     -0.1,
+     -0.011
+    ],
+    "mh_or_within_problem": 0.456,
+    "mh_or_ci": [
+     0.287,
+     0.686
+    ],
+    "fe_or_participant_problem": 0.37,
+    "rho": 0.201,
+    "rho_ci": [
+     -0.187,
+     0.582
+    ],
+    "gap_diff_records_minus": -0.184,
+    "gap_diff_ci": [
+     -0.39,
+     -0.041
+    ],
+    "rho_diff_records_minus": -0.813,
+    "rho_diff_ci": [
+     -1.269,
+     -0.277
+    ],
+    "agreement_with_record_label": 0.463,
+    "flagged_among_record_ai": 0.428,
+    "flagged_among_unknown": 0.214
+   }
+  },
+  "by_length_tercile": {
+   "1": {
+    "n": 358,
+    "accepted_rate": 0.26,
+    "Records": {
+     "gap": -0.393,
+     "flagged": 0.947
+    },
+    "Structural GB": {
+     "gap": -0.169,
+     "flagged": 0.626
+    }
+   },
+   "2": {
+    "n": 342,
+    "accepted_rate": 0.167,
+    "Records": {
+     "gap": -0.299,
+     "flagged": 0.906
+    },
+    "Structural GB": {
+     "gap": 0.041,
+     "flagged": 0.465
+    }
+   },
+   "3": {
+    "n": 347,
+    "accepted_rate": 0.254,
+    "Records": {
+     "gap": -0.154,
+     "flagged": 0.85
+    },
+    "Structural GB": {
+     "gap": -0.077,
+     "flagged": 0.124
+    }
+   }
+  },
+  "tercile_cuts": [
+   57.0,
+   97.0
+  ],
+  "note": "gap = Accepted rate AI-labelled minus other; MH OR stratified by problem; FE OR from logistic regression with participant and problem dummies (ridge alpha 0.01); participant-clustered bootstrap, 2,000 resamples, seed 6321."
+ },
+ "unmatched_similarity": {
+  "n": 95,
+  "median": 0.239,
+  "below_0_4": 81,
+  "from_0_4_to_0_6": 3,
+  "from_0_6_to_0_8": 11
+ },
+ "fullu_by_stratum": {
+  "AE": {
+   "cases": 20,
+   "resolved_ref": 55,
+   "agree": 53
+  },
+  "AN": {
+   "cases": 35,
+   "resolved_ref": 89,
+   "agree": 89
+  },
+  "D": {
+   "cases": 25,
+   "resolved_ref": 59,
+   "agree": 59
+  },
+  "ED": {
+   "cases": 47,
+   "resolved_ref": 167,
+   "agree": 166
+  },
+  "NM": {
+   "cases": 9,
+   "resolved_ref": 19,
+   "agree": 18
+  },
+  "PR": {
+   "cases": 30,
+   "resolved_ref": 101,
+   "agree": 100
+  }
+ },
+ "fullu_by_assignment": {
+  "followup": {
+   "resolved_ref": 388,
+   "agree": 384
+  },
+  "randomized": {
+   "resolved_ref": 102,
+   "agree": 101
+  }
+ },
+ "trace_hierarchical": {
+  "correct": 155,
+  "wrong": 6,
+  "unresolved": 19,
+  "decisions": 180,
+  "note": "AI-absent scenarios scored on C1 only; mechanism map as in tlt_trace_score.py. Check MECH against tlt_trace_score.py before citing."
+ },
+ "tierB_by_source": {
+  "n": 780,
+  "linked": 780,
+  "stage_counts": {
+   "1": 502,
+   "2": 185,
+   "3": 58,
+   "4": 28,
+   "5": 7
+  },
+  "detection": {
+   "stage": {
+    "1": {
+     "n": 502,
+     "UniXcoder": 0.924,
+     "Qwen + LoRA": 0.962,
+     "DroidDetect": 0.841,
+     "Structural GB": 0.53
+    },
+    "2": {
+     "n": 185,
+     "UniXcoder": 0.741,
+     "Qwen + LoRA": 0.622,
+     "DroidDetect": 0.243,
+     "Structural GB": 0.211
+    },
+    "3": {
+     "n": 58,
+     "UniXcoder": 0.81,
+     "Qwen + LoRA": 0.741,
+     "DroidDetect": 0.345,
+     "Structural GB": 0.241
+    },
+    "4": {
+     "n": 28,
+     "UniXcoder": 0.714,
+     "Qwen + LoRA": 0.643,
+     "DroidDetect": 0.214,
+     "Structural GB": 0.143
+    },
+    "5": {
+     "n": 7,
+     "UniXcoder": 0.571,
+     "Qwen + LoRA": 0.571,
+     "DroidDetect": 0.0,
+     "Structural GB": 0.286
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "note": "E1+E+T C3 re-coded under an explicit abstention rule by configuration reviewers A and B.",
+ "packets": 177,
+ "coded": {
+  "A": 177,
+  "B": 177
+ },
+ "A": {
+  "ref_resolved|agree": 9,
+  "ref_resolved|lost": 77,
+  "ref_unresolved|new:supported:incremental": 1,
+  "ref_unresolved|stayed": 90
+ },
+ "B": {
+  "ref_resolved|lost": 86,
+  "ref_unresolved|new:supported:incremental": 1,
+  "ref_unresolved|stayed": 90
+ },
+ "agreed": {
+  "ref_resolved|lost": 86,
+  "ref_unresolved|new:supported:incremental": 1,
+  "ref_unresolved|stayed": 90
+ },
+ "agreement_A_B": {
+  "raw": 0.949,
+  "ac1": 0.948
+ },
+ "original_E1pEpT_C3_for_comparison": "30 of 86 reference mechanisms matched, 56 proposal applications read as editor insertions (rq4_main.json mechanism_check)"
+}
